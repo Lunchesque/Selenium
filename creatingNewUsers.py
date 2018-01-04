@@ -81,7 +81,7 @@ class TestCreation(unittest.TestCase):
         self.logout(driver)
 
     def tearDown(self):
-        time.sleep(1)
+        time.sleep(0.5)
         self.driver.close()
 
 if __name__ == '__main__':

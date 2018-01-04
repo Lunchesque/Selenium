@@ -48,7 +48,7 @@ class DeletingTestUser(unittest.TestCase):
             title = driver.find_element_by_xpath("(//tr/td/span[contains(@ng-bind, 'user')])[1]").get_attribute("title")
 
     def tearDown(self):
-        time.sleep(1)
+        time.sleep(0.5)
         self.driver.quit()
 
 if __name__ == '__main__':

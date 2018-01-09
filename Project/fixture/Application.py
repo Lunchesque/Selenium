@@ -1,31 +1,21 @@
 # -*- coding: utf-8 -*-
 
-from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
 from random import choice
 from string import digits
+from selenium import webdriver
+from fixture.session import SessionHelper
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.action_chains import ActionChains
 
 class Application:
 
     def __init__(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(10)
+        self.session = SessionHelper(self)
         self.driver.maximize_window()
-
-    def open_station(self):
-        driver = self.driver
-        driver.get("http://172.20.9.134")
-
-    def login_as_admin(self):
-        driver = self.driver
-        driver.find_element_by_xpath("//input[@type='text']").send_keys("999")
-        driver.find_element_by_xpath("//input[@type='password']").send_keys("admADM1/")
-        driver.find_element_by_xpath("//input[@value='Log In']").click()
 
     def open_organization_page(self):
         driver = self.driver
@@ -56,19 +46,6 @@ class Application:
         driver.find_element_by_name("password_confirmation").send_keys(password)
 
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
-
-        #print(" ")
-        #print("User's role: " + role)
-        #print("User's email: " + email)
-        #print("User's phone: " + phone)
-        #print("User's password: " + password)
-        #print(index)
-
-    def logout(self):
-        driver = self.driver
-        logoutBtn = driver.find_element_by_xpath("(//a[contains(@href, '#')])[20]")
-        ActionChains(driver).move_to_element(logoutBtn).click(logoutBtn).perform()
-        driver.find_element_by_link_text(u"Выйти").click()
 
     def destruction(self):
         self.driver.close()

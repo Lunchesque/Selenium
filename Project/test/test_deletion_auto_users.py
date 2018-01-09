@@ -4,12 +4,6 @@ import pytest
 from fixture.Application import Application
 from selenium.webdriver.common.action_chains import ActionChains
 
-@pytest.fixture
-def app(request):
-    fixture = Application()
-    request.addfinalizer(fixture.destruction)
-    return fixture
-
 def test_deleting_auto_users(app):
     deletion = True
     app.session.open_station()

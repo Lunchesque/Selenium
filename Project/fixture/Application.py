@@ -61,6 +61,11 @@ class Application:
                 deletion = False
             title = driver.find_element_by_xpath("(//tr/td/span[contains(@ng-bind, 'user')])[1]").get_attribute("title")
 
+    def logout(self):
+        driver = self.driver
+        logoutBtn = driver.find_element_by_xpath("(//a[contains(@href, '#')])[20]")
+        ActionChains(driver).move_to_element(logoutBtn).click(logoutBtn).perform()
+        driver.find_element_by_link_text(u"Выйти").click()
 
     def destruction(self):
         self.driver.close()

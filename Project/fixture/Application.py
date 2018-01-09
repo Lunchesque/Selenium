@@ -17,11 +17,6 @@ class Application:
         self.session = SessionHelper(self)
         self.driver.maximize_window()
 
-    def open_organization_page(self):
-        driver = self.driver
-        driver.find_element_by_xpath("(//a[contains(@href, '#')])[14]").click()
-        driver.find_element_by_xpath("//a[contains(@href, '#!/org/users')]").click()
-
     def create_all_types_of_users(self, index):
         driver = self.driver
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")
@@ -46,6 +41,27 @@ class Application:
         driver.find_element_by_name("password_confirmation").send_keys(password)
 
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
+
+    def deletion_auto_users(self):
+        driver = self.driver
+        optionsBtn = driver.find_element_by_xpath("(//button[@type='button'])[6]")
+        ActionChains(driver).move_to_element(optionsBtn).click(optionsBtn).perform()
+        driver.find_element_by_link_text(u"Удалить").click()
+        driver.find_element_by_xpath("//div[3]/button[contains(@class, 'primary')]").click()
+
+    def deletion_circle(self):
+        deletion = True
+        driver = self.driver
+        title = driver.find_element_by_xpath("(//tr/td/span[contains(@ng-bind, 'user')])[1]").get_attribute("title")
+        while deletion:
+            if "Auto.test.user_" in title:
+                self.deletion_auto_users()
+                ActionChains(driver).pause(0.05).perform()
+            else:
+                print("No AutoTestUsers Found")
+                deletion = False
+            title = driver.find_element_by_xpath("(//tr/td/span[contains(@ng-bind, 'user')])[1]").get_attribute("title")
+
 
     def destruction(self):
         self.driver.close()

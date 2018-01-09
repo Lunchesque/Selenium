@@ -23,3 +23,12 @@ def test_creating_users(app):      #функция теста, всегда до
 
     ActionChains(app.driver).pause(0.05).perform()
     app.session.logout()
+
+def test_deleting_auto_users(app):
+    deletion = True
+    app.session.open_station()
+    app.session.login_as_admin()
+    app.session.open_organization_page()
+    app.deletion_circle()
+    ActionChains(app.driver).pause(0.05).perform()
+    app.session.logout()

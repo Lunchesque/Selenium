@@ -41,8 +41,8 @@ class DeletingTestUser(unittest.TestCase):
 
         deletion = True
         title = driver.find_element_by_xpath("(//tr/td/span[contains(@ng-bind, 'user')])[1]").get_attribute("title")
+        #print(title)
         while deletion:
-            print(title)
             if "Auto.test.user_" in title:
                 self.deletion_auto_users()
                 time.sleep(0.05)

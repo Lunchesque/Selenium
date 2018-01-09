@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-#import time
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
@@ -58,12 +57,12 @@ class Application:
 
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
 
-        print(" ")
-        print("User's role: " + role)
-        print("User's email: " + email)
-        print("User's phone: " + phone)
-        print("User's password: " + password)
-        print(index)
+        #print(" ")
+        #print("User's role: " + role)
+        #print("User's email: " + email)
+        #print("User's phone: " + phone)
+        #print("User's password: " + password)
+        #print(index)
 
     def logout(self):
         driver = self.driver
@@ -72,5 +71,4 @@ class Application:
         driver.find_element_by_link_text(u"Выйти").click()
 
     def destruction(self):
-        #time.sleep(0.5)
         self.driver.close()

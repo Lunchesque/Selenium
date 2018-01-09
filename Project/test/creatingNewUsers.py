@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import time
 import pytest
-from Application import Application
+from fixture.Application import Application
 
 @pytest.fixture
 def app(request):

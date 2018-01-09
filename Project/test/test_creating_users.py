@@ -20,6 +20,6 @@ def test_creating_users(app):      #функция теста, всегда до
         ActionChains(app.driver).pause(0.05).perform()
         app.create_all_types_of_users(index)
         index += 1
-
+        
     ActionChains(app.driver).pause(0.05).perform()
     app.session.logout()

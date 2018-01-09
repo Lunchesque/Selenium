@@ -39,7 +39,6 @@ class Application:
 
         driver.find_element_by_name("password").send_keys(password)
         driver.find_element_by_name("password_confirmation").send_keys(password)
-
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
 
     def deletion_auto_users(self):

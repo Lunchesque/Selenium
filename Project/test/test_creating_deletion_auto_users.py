@@ -16,7 +16,8 @@ def test_creating_users(app):      #функция теста, всегда до
         index += 1
 
     ActionChains(app.driver).pause(0.05).perform()
-    app.logout()
+    app.session.logout()
+    #ActionChains(app.driver).pause(0.05).perform()
 
 def test_deleting_auto_users(app):
     deletion = True

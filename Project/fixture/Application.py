@@ -17,6 +17,13 @@ class Application:
         self.session = SessionHelper(self)
         self.driver.maximize_window()
 
+    def is_valid(self):
+        try:
+            self.driver.current_url
+            return True
+        except:
+            return False
+
     def create_all_types_of_users(self, index):
         driver = self.driver
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")
@@ -62,4 +69,4 @@ class Application:
             title = driver.find_element_by_xpath("(//tr/td/span[contains(@ng-bind, 'user')])[1]").get_attribute("title")
 
     def destruction(self):
-        self.driver.close()
+        self.driver.quit()

@@ -3,18 +3,18 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 class SessionHelper:
 
-    def __init__(self, app):
+    def __init__(self, app):    #инициализация ссылки на создание фикстуры (окружения)
         self.app = app
 
-    def open_station(self):
+    def open_station(self):     #переход на указанные url в текущей сессии браузера
         driver = self.app.driver
-        driver.get("http://172.20.9.134")
+        driver.get("http://172.20.9.134")   #осуществляется атрибутом класса "webdriver" - ".get("url")"
 
-    def login_as_admin(self):
+    def login_as_admin(self):   #логин пользователем в открытой странице из "open_station"
         driver = self.app.driver
-        driver.find_element_by_xpath("//input[@type='text']").send_keys("999")
+        driver.find_element_by_xpath("//input[@type='text']").send_keys("999")  #send_keys - посылает в текстовое поле символы
         driver.find_element_by_xpath("//input[@type='password']").send_keys("admADM1/")
-        driver.find_element_by_xpath("//input[@value='Log In']").click()
+        driver.find_element_by_xpath("//input[@value='Log In']").click()    #click - имитация нажатия основной кнопкой мыши на элемент
 
     def open_organization_page(self):
         driver = self.app.driver

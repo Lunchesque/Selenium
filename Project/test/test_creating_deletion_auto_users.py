@@ -14,5 +14,5 @@ def test_creating_users(app):      #функция теста, всегда до
     ActionChains(app.driver).pause(0.05).perform()
 
 def test_deleting_auto_users(app):
-    app.deletion_circle()
+    app.deletion_auto_users()
     ActionChains(app.driver).pause(0.05).perform()

@@ -23,6 +23,7 @@ class SessionHelper:
 
     def logout(self):
         driver = self.app.driver
+        ActionChains(driver).pause(0.05).perform()
         logoutBtn = driver.find_element_by_xpath("(//a[contains(@href, '#')])[20]")
         ActionChains(driver).move_to_element(logoutBtn).click(logoutBtn).perform()
         driver.find_element_by_link_text(u"Выйти").click()

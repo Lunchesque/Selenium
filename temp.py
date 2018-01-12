@@ -12,3 +12,6 @@
 
 from selenium.webdriver.common.action_chains import ActionChains
 ActionChains(driver).pause(0.3).perform()
+
+
+(//tr/td/span[contains(@ng-bind, 'user')])[1]

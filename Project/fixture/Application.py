@@ -7,13 +7,14 @@ from fixture.session import SessionHelper
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import *
 from selenium.webdriver.common.action_chains import ActionChains
 
 class Application:
 
     def __init__(self):
         self.driver = webdriver.Chrome()
-        self.driver.implicitly_wait(10)
+        self.driver.implicitly_wait(1)
         self.session = SessionHelper(self)
         self.driver.maximize_window()
 
@@ -50,23 +51,24 @@ class Application:
 
     def deletion_auto_users(self):
         driver = self.driver
-        optionsBtn = driver.find_element_by_xpath("(//button[@type='button'])[6]")
-        ActionChains(driver).move_to_element(optionsBtn).click(optionsBtn).perform()
-        driver.find_element_by_link_text(u"Удалить").click()
-        driver.find_element_by_xpath("//div[3]/button[contains(@class, 'primary')]").click()
-
-    def deletion_circle(self):
-        deletion = True
-        driver = self.driver
-        title = driver.find_element_by_xpath("(//tr/td/span[contains(@ng-bind, 'user')])[1]").get_attribute("title")
-        while deletion:
-            if "Auto.test.user_" in title:
-                self.deletion_auto_users()
-                ActionChains(driver).pause(0.05).perform()
-            else:
-                print("No AutoTestUsers Found")
-                deletion = False
-            title = driver.find_element_by_xpath("(//tr/td/span[contains(@ng-bind, 'user')])[1]").get_attribute("title")
+        a = 1
+        autoNum = driver.find_elements_by_xpath("(//tr/td/span[contains(@title, 'Auto.test.user')])")
+        count = len(autoNum)
+        if count == 0:
+            pass
+        elif count != 0:
+            while count != 0:
+                title = driver.find_element_by_xpath("(//span[contains(@ng-bind, 'full_name')])[{}]".format(a)).get_attribute("title")
+                if "Auto.test.user" in title:
+                    btnNum = 5 + a
+                    ActionChains(driver).pause(0.05).perform()
+                    optionsBtn = driver.find_element_by_xpath("(//button[@type='button'])[{}]".format(btnNum))
+                    ActionChains(driver).move_to_element(optionsBtn).click(optionsBtn).perform()
+                    driver.find_element_by_link_text(u"Удалить").click()
+                    driver.find_element_by_xpath("//div[3]/button[contains(@class, 'primary')]").click()
+                    count -= 1
+                else:
+                    a += 1
 
     def destruction(self):
         self.driver.quit()

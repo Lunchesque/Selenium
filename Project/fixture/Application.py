@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+#НЕ УДАЕЛЯЕТ ПОСЛЕДНЕГО ПОЛЬЗОВАТЕЛЯ ЕСЛИ БОЛЬШЕ 10
 from random import choice
 from string import digits
 from selenium import webdriver
@@ -27,6 +27,9 @@ class Application:
     def create_all_types_of_users(self):    #создание пользователей всех ролей
         driver = self.driver
         index = 0       #переменная для выбора номера роли из выпадающего списка
+        emails = []
+        phones = []
+        passwords = []
         while index <= 3:   #основной цикл создания пользователей
             addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
             ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
@@ -39,6 +42,10 @@ class Application:
             fullName = ("Auto.test.user_{0}_{1}".format(role, userId))  #генерация валидного имени пользователя с использованием значения роли и уникального идентификатора
             password = fullName     #пароль равен имени пользователя
             #send_keys - вписание значений в поля
+            emails.append(email)
+            passwords.append(password)
+            phones.append(phone)
+
             driver.find_element_by_name("email").send_keys(email)
             driver.find_element_by_name("phone").send_keys(phone)
             driver.find_element_by_name("fullName").send_keys(fullName)
@@ -52,6 +59,7 @@ class Application:
             driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
             index += 1
             ActionChains(driver).pause(0.05).perform()
+        assert (len(emails) and len(passwords) and len(phones)) == 4
 
     def deletion_auto_users(self):
         driver = self.driver

@@ -22,11 +22,10 @@ def app(request):
             fixture.session.open_users_list()
     return fixture
 
-
 @pytest.fixture(scope = "session", autouse = True)
 def stop(request):
     def fin():
-        fixture.session.logout()
+        fixture.session.ensure_logout()
         fixture.destroy()
     request.addfinalizer(fin)
     return fixture

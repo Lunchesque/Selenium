@@ -26,6 +26,11 @@ class SessionHelper:
 
     def logout(self):
         driver = self.app.driver
-        logoutBtn = driver.find_element_by_xpath("(//a[contains(@href, '#')])[20]")
+        logoutBtn = driver.find_element_by_css_selector("img.img-circle.toolbar-icon-container-item.ng-scope")
         ActionChains(driver).move_to_element(logoutBtn).click(logoutBtn).perform()
         driver.find_element_by_link_text(u"Выйти").click()
+
+    def ensure_logout(self):
+        driver = self.app.driver
+        if len(driver.find_elements_by_css_selector("img.img-circle.toolbar-icon-container-item.ng-scope")) > 0:
+            self.logout()

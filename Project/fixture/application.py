@@ -11,7 +11,7 @@ class Application:
     def __init__(self):
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
-        self.driver.implicitly_wait(5)
+        self.driver.implicitly_wait(1)
         self.session = SessionHelper(self)
         self.users = UsersHelper(self)
 

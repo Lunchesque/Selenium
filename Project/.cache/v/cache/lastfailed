@@ -1,1 +1,3 @@
-{}
+{
+  "tests/test_add_all_types_of_users.py::test_login_new_admin": true
+}

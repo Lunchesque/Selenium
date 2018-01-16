@@ -94,8 +94,7 @@ class UsersHelper:
     def deletion_auto_users(self):
         driver = self.app.driver
         a = 1
-        autoNum = driver.find_elements_by_xpath("(//tr/td/span[contains(@title, 'Auto.test.user')])")
-        count = len(autoNum)
+        count = self.count()
         if count != 0:
             while count != 0:
                 title = driver.find_element_by_xpath("(//span[contains(@ng-bind, 'full_name')])[{}]".format(a)).get_attribute("title")
@@ -111,3 +110,7 @@ class UsersHelper:
                     a += 1
         else:
             pass
+
+    def count(self):
+        driver = self.app.driver
+        return len(driver.find_elements_by_xpath("(//tr/td/span[contains(@title, 'Auto.test.user')])"))

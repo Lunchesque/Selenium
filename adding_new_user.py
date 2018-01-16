@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from data import Data
 import pytest
+from data import Data
 from random import choice
 from string import digits
 from application import Appliaction

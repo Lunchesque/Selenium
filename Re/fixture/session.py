@@ -8,7 +8,7 @@ class SessionHelper:
     def __init__(self, app):
         self.app = app
 
-    def user_login(self, userName, admPass):
+    def login_as_admin(self, userName, admPass):
         driver = self.app.driver
         self.app.open_station()
         driver.find_element_by_xpath("//input[@type='text']").clear()

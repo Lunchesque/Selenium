@@ -11,9 +11,7 @@ def app(request):
     request.addfinalizer(fixture.destroy)
     return fixture
 
-def test_untitled_test_case(app):
+def test_deleting_auto_users(app):
     app.session.login_as_admin(userName = "999", admPass = "admADM1/")
-    app.users.creating_admin(Data(email = "AutoTestUser_{}_{}@ki.ki", name = "Auto.test.user_{}_{}",
-                                    userId = (''.join(choice(digits) for i in range(5))),
-                                    phone = (''.join(choice(digits) for i in range(15)))))
+    app.users.deletion_auto_users()
     app.session.logout()

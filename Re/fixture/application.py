@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
-from data import Data
+from model.data import Data
 from random import choice
 from string import digits
 from selenium.webdriver.common.by import By

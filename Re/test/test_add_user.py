@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import pytest
-from data import Data
+from model.data import Data
 from random import choice
 from string import digits
-from application import Appliaction
+from fixture.application import Appliaction
 
 @pytest.fixture
 def app(request):

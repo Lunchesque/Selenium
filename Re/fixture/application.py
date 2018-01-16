@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
-from selenium import webdriver
-from model.data import Data
 from random import choice
 from string import digits
+from model.data import Data
+from selenium import webdriver
+from fixture.session import SessionHelper
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
@@ -15,19 +16,11 @@ class Appliaction:
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
         self.driver.implicitly_wait(5)
+        self.session = SessionHelper(self)
 
     def open_station(self):
         driver = self.driver
         driver.get("https://172.20.9.134/#!/login")
-
-    def user_login(self, userName, admPass):
-        driver = self.driver
-        self.open_station()
-        driver.find_element_by_xpath("//input[@type='text']").clear()
-        driver.find_element_by_xpath("//input[@type='text']").send_keys(userName)
-        driver.find_element_by_xpath("//input[@type='password']").clear()
-        driver.find_element_by_xpath("//input[@type='password']").send_keys(admPass)
-        driver.find_element_by_xpath("//input[@value='Log In']").click()
 
     def open_users_list(self):
         driver = self.driver
@@ -50,13 +43,7 @@ class Appliaction:
         driver.find_element_by_name("enableNotifications").click()
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
         ActionChains(driver).pause(0.05).perform()
-        self.logout()
-
-    def logout(self):
-        driver = self.driver
-        logoutBtn = driver.find_element_by_xpath("(//a[contains(@href, '#')])[20]")
-        ActionChains(driver).move_to_element(logoutBtn).click(logoutBtn).perform()
-        driver.find_element_by_link_text(u"Выйти").click()
+        self.session.logout()
 
     def destroy(self):
         self.driver.quit()

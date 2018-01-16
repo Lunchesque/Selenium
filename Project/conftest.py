@@ -11,7 +11,8 @@ def app(request):
     if fixture is None:
         fixture = Application()
         fixture.session.open_station()
-        fixture.session.login_as_admin(userName = "999", admPass = "admADM1/")
+        fixture.session.login_as_admin(userName = "999",
+                                        admPass = "admADM1/")
         fixture.session.open_users_list()
     else:
         if not fixture.is_valid():

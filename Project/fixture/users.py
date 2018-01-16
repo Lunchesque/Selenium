@@ -10,14 +10,8 @@ class UsersHelper:
     def __init__(self, app):
         self.app = app
 
-    def open_users_list(self):
-        driver = self.app.driver
-        driver.find_element_by_xpath("(//a[contains(@href, '#')])[14]").click()
-        driver.find_element_by_link_text(u"Пользователи").click()
-
     def creating_admin(self, data):
         driver = self.app.driver
-        self.open_users_list()
 
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
@@ -39,7 +33,6 @@ class UsersHelper:
 
     def creating_operator(self, data):
         driver = self.app.driver
-        self.open_users_list()
 
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
@@ -60,7 +53,6 @@ class UsersHelper:
 
     def creating_watcher(self, data):
         driver = self.app.driver
-        self.open_users_list()
 
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
@@ -81,7 +73,6 @@ class UsersHelper:
 
     def creating_demo(self, data):
         driver = self.app.driver
-        self.open_users_list()
 
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
@@ -100,10 +91,8 @@ class UsersHelper:
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
         ActionChains(driver).pause(0.05).perform()
 
-
     def deletion_auto_users(self):
         driver = self.app.driver
-        self.open_users_list()
         a = 1
         autoNum = driver.find_elements_by_xpath("(//tr/td/span[contains(@title, 'Auto.test.user')])")
         count = len(autoNum)

@@ -1,4 +1,1 @@
-{
-  "test/test_creating_deletion_auto_users.py::test_creating_users": true,
-  "test/test_deletion_auto_users.py::test_deleting_auto_users": true
-}
+{}

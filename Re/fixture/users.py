@@ -37,6 +37,70 @@ class UsersHelper:
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
         ActionChains(driver).pause(0.05).perform()
 
+    def creating_operator(self, data):
+        driver = self.app.driver
+        self.open_users_list()
+
+        addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
+        ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
+        Select(driver.find_element_by_name("role")).select_by_index(2)      #выбор роли пользователя, индекс - номер в выпадающем списке
+
+        role = driver.find_element_by_name("role").get_attribute("value")
+
+        driver.find_element_by_name("email").send_keys(data.email.format(role, data.userId))
+        driver.find_element_by_name("phone").send_keys(data.phone)
+        driver.find_element_by_name("fullName").send_keys(data.name.format(role, data.userId))
+
+        driver.find_element_by_name("autoGeneratePassword").click()
+        driver.find_element_by_name("showPasswords").click()
+        driver.find_element_by_name("password").send_keys(data.name.format(role, data.userId))
+        driver.find_element_by_name("password_confirmation").send_keys(data.name.format(role, data.userId))
+        driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
+        ActionChains(driver).pause(0.05).perform()
+
+    def creating_watcher(self, data):
+        driver = self.app.driver
+        self.open_users_list()
+
+        addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
+        ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
+        Select(driver.find_element_by_name("role")).select_by_index(1)      #выбор роли пользователя, индекс - номер в выпадающем списке
+
+        role = driver.find_element_by_name("role").get_attribute("value")
+
+        driver.find_element_by_name("email").send_keys(data.email.format(role, data.userId))
+        driver.find_element_by_name("phone").send_keys(data.phone)
+        driver.find_element_by_name("fullName").send_keys(data.name.format(role, data.userId))
+
+        driver.find_element_by_name("autoGeneratePassword").click()
+        driver.find_element_by_name("showPasswords").click()
+        driver.find_element_by_name("password").send_keys(data.name.format(role, data.userId))
+        driver.find_element_by_name("password_confirmation").send_keys(data.name.format(role, data.userId))
+        driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
+        ActionChains(driver).pause(0.05).perform()
+
+    def creating_demo(self, data):
+        driver = self.app.driver
+        self.open_users_list()
+
+        addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
+        ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
+        Select(driver.find_element_by_name("role")).select_by_index(0)      #выбор роли пользователя, индекс - номер в выпадающем списке
+
+        role = driver.find_element_by_name("role").get_attribute("value")
+
+        driver.find_element_by_name("email").send_keys(data.email.format(role, data.userId))
+        driver.find_element_by_name("phone").send_keys(data.phone)
+        driver.find_element_by_name("fullName").send_keys(data.name.format(role, data.userId))
+
+        driver.find_element_by_name("autoGeneratePassword").click()
+        driver.find_element_by_name("showPasswords").click()
+        driver.find_element_by_name("password").send_keys(data.name.format(role, data.userId))
+        driver.find_element_by_name("password_confirmation").send_keys(data.name.format(role, data.userId))
+        driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
+        ActionChains(driver).pause(0.05).perform()
+
+
     def deletion_auto_users(self):
         driver = self.app.driver
         self.open_users_list()

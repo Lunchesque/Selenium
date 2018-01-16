@@ -11,9 +11,7 @@ class SessionHelper:
     def login_as_admin(self, userName, admPass):
         driver = self.app.driver
         self.app.open_station()
-        driver.find_element_by_xpath("//input[@type='text']").clear()
         driver.find_element_by_xpath("//input[@type='text']").send_keys(userName)
-        driver.find_element_by_xpath("//input[@type='password']").clear()
         driver.find_element_by_xpath("//input[@type='password']").send_keys(admPass)
         driver.find_element_by_xpath("//input[@value='Log In']").click()
 

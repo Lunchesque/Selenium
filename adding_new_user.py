@@ -2,6 +2,7 @@
 import unittest, time, re
 from random import choice
 from string import digits
+from data import Data
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -28,20 +29,15 @@ class UntitledTestCase(unittest.TestCase):
         driver.find_element_by_xpath("(//a[contains(@href, '#')])[14]").click()
         driver.find_element_by_link_text(u"Пользователи").click()
 
-    def creating_admin(self, driver, email, name):
-        userId = (''.join(choice(digits) for i in range(5)))    #генерация уникального рандомного идентификатора пользователя
+    def creating_admin(self, driver, data):
         driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]").click()
-        driver.find_element_by_name("email").clear()
-        driver.find_element_by_name("email").send_keys(email.format(userId))
-        driver.find_element_by_name("phone").clear()
+        driver.find_element_by_name("email").send_keys(data.email.format(data.userId))
         driver.find_element_by_name("phone").send_keys(''.join(choice(digits) for i in range(15)))
-        driver.find_element_by_name("fullName").clear()
-        driver.find_element_by_name("fullName").send_keys(name.format(userId))
+        driver.find_element_by_name("fullName").send_keys(data.name.format(data.userId))
         driver.find_element_by_name("autoGeneratePassword").click()
         driver.find_element_by_name("showPasswords").click()
-        driver.find_element_by_name("password").clear()
-        driver.find_element_by_name("password").send_keys(name.format(userId))
-        driver.find_element_by_name("password_confirmation").send_keys(name.format(userId))
+        driver.find_element_by_name("password").send_keys(data.name.format(data.userId))
+        driver.find_element_by_name("password_confirmation").send_keys(data.name.format(data.userId))
         Select(driver.find_element_by_name("role")).select_by_visible_text(u"Администратор")
         driver.find_element_by_name("role").click()
         driver.find_element_by_name("enableNotifications").click()
@@ -57,7 +53,8 @@ class UntitledTestCase(unittest.TestCase):
         self.open_station(driver)
         self.user_login(driver, userName = "999", admPass = "admADM1/")
         self.open_users_list(driver)
-        self.creating_admin(driver, email = "AutoTestUser_{0}@ki.ki", name = "Auto.test.user_{0}")
+        self.creating_admin(driver, Data(email = "AutoTestUser_{0}@ki.ki", name = "Auto.test.user_{0}",
+                                            userId = (''.join(choice(digits) for i in range(5)))))
         ActionChains(driver).pause(0.05).perform()
         self.logout(driver)
 

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from model.data import Data
 from fixture.session import SessionHelper
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -12,7 +13,6 @@ class UsersHelper:
 
     def creating_admin(self, data):
         driver = self.app.driver
-
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
         Select(driver.find_element_by_name("role")).select_by_index(3)      #выбор роли пользователя, индекс - номер в выпадающем списке
@@ -29,11 +29,11 @@ class UsersHelper:
         driver.find_element_by_name("password_confirmation").send_keys(data.name.format(role, data.userId))
         driver.find_element_by_name("enableNotifications").click()
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
-        ActionChains(driver).pause(0.05).perform()
+        ActionChains(driver).pause(0.1).perform()
 
     def creating_operator(self, data):
         driver = self.app.driver
-
+        usersList = len(driver.find_elements_by_xpath("//span[contains(@ng-bind, 'full_name')]"))
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
         Select(driver.find_element_by_name("role")).select_by_index(2)      #выбор роли пользователя, индекс - номер в выпадающем списке
@@ -49,11 +49,12 @@ class UsersHelper:
         driver.find_element_by_name("password").send_keys(data.name.format(role, data.userId))
         driver.find_element_by_name("password_confirmation").send_keys(data.name.format(role, data.userId))
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
-        ActionChains(driver).pause(0.05).perform()
+        ActionChains(driver).pause(0.1).perform()
+        assert usersList + 1 == len(driver.find_elements_by_xpath("//span[contains(@ng-bind, 'full_name')]"))
 
     def creating_watcher(self, data):
         driver = self.app.driver
-
+        usersList = len(driver.find_elements_by_xpath("//span[contains(@ng-bind, 'full_name')]"))
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
         Select(driver.find_element_by_name("role")).select_by_index(1)      #выбор роли пользователя, индекс - номер в выпадающем списке
@@ -69,11 +70,12 @@ class UsersHelper:
         driver.find_element_by_name("password").send_keys(data.name.format(role, data.userId))
         driver.find_element_by_name("password_confirmation").send_keys(data.name.format(role, data.userId))
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
-        ActionChains(driver).pause(0.05).perform()
+        ActionChains(driver).pause(0.1).perform()
+        assert usersList + 1 == len(driver.find_elements_by_xpath("//span[contains(@ng-bind, 'full_name')]"))
 
     def creating_demo(self, data):
         driver = self.app.driver
-
+        usersList = len(driver.find_elements_by_xpath("//span[contains(@ng-bind, 'full_name')]"))
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
         Select(driver.find_element_by_name("role")).select_by_index(0)      #выбор роли пользователя, индекс - номер в выпадающем списке
@@ -89,7 +91,8 @@ class UsersHelper:
         driver.find_element_by_name("password").send_keys(data.name.format(role, data.userId))
         driver.find_element_by_name("password_confirmation").send_keys(data.name.format(role, data.userId))
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
-        ActionChains(driver).pause(0.05).perform()
+        ActionChains(driver).pause(0.1).perform()
+        assert usersList + 1 == len(driver.find_elements_by_xpath("//span[contains(@ng-bind, 'full_name')]"))
 
     def deletion_auto_users(self):
         driver = self.app.driver
@@ -105,7 +108,7 @@ class UsersHelper:
                     driver.find_element_by_link_text(u"Удалить").click()    #выбор из выпадающего списка удаление и нажатие
                     driver.find_element_by_xpath("//div[3]/button[contains(@class, 'primary')]").click()    #нажать на кнопку подтверждения удаления
                     count -= 1
-                    ActionChains(driver).pause(0.05).perform()
+                    ActionChains(driver).pause(0.1).perform()
                 else:   #увеличение счетчика, если в списке не автопользователь
                     a += 1
         else:
@@ -114,3 +117,11 @@ class UsersHelper:
     def count(self):
         driver = self.app.driver
         return len(driver.find_elements_by_xpath("(//tr/td/span[contains(@title, 'Auto.test.user')])"))
+
+    def get_users_list(self):
+        driver = self.app.driver
+        usersList = []
+        for element in driver.find_elements_by_xpath("//span[@ng-bind='user.full_name']"):
+            text = element.text
+            usersList.append(Data(name = text))
+        return usersList

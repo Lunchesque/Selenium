@@ -10,4 +10,8 @@ def test_deleting_auto_users(app):
         app.users.creating_demo(Data(email = "AutoTestUser_{}_{}@ki.ki", name = "Auto.test.user_{}_{}",
                                         userId = (''.join(choice(digits) for i in range(5))),
                                         phone = (''.join(choice(digits) for i in range(15)))))
+    old_users = app.users.get_users_list()
+    auto_users = app.users.count()
     app.users.deletion_auto_users()
+    new_users = app.users.get_users_list()
+    assert len(old_users) - auto_users == len(new_users)

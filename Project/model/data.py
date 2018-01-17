@@ -7,3 +7,11 @@ class Data:
         self.name = name
         self.userId = userId
         self.phone = phone
+
+"""
+    def __repr__(self):
+        return "%s" % (self.name)
+
+    def __eq__(self, other):
+        return self.name == other.name
+"""

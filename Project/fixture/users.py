@@ -30,6 +30,7 @@ class UsersHelper:
         driver.find_element_by_name("enableNotifications").click()
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
         ActionChains(driver).pause(0.1).perform()
+        self.users_cache = None
 
     def creating_operator(self, data):
         driver = self.app.driver
@@ -50,7 +51,7 @@ class UsersHelper:
         driver.find_element_by_name("password_confirmation").send_keys(data.name.format(role, data.userId))
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
         ActionChains(driver).pause(0.1).perform()
-        assert usersList + 1 == len(driver.find_elements_by_xpath("//span[contains(@ng-bind, 'full_name')]"))
+        self.users_cache = None
 
     def creating_watcher(self, data):
         driver = self.app.driver
@@ -71,7 +72,7 @@ class UsersHelper:
         driver.find_element_by_name("password_confirmation").send_keys(data.name.format(role, data.userId))
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
         ActionChains(driver).pause(0.1).perform()
-        assert usersList + 1 == len(driver.find_elements_by_xpath("//span[contains(@ng-bind, 'full_name')]"))
+        self.users_cache = None
 
     def creating_demo(self, data):
         driver = self.app.driver
@@ -92,7 +93,7 @@ class UsersHelper:
         driver.find_element_by_name("password_confirmation").send_keys(data.name.format(role, data.userId))
         driver.find_element_by_xpath("(//button[@type='button'])[3]").click()
         ActionChains(driver).pause(0.1).perform()
-        assert usersList + 1 == len(driver.find_elements_by_xpath("//span[contains(@ng-bind, 'full_name')]"))
+        self.users_cache = None
 
     def deletion_auto_users(self):
         driver = self.app.driver
@@ -118,10 +119,14 @@ class UsersHelper:
         driver = self.app.driver
         return len(driver.find_elements_by_xpath("(//tr/td/span[contains(@title, 'Auto.test.user')])"))
 
+    users_cache = None
+
+
     def get_users_list(self):
-        driver = self.app.driver
-        usersList = []
-        for element in driver.find_elements_by_xpath("//span[@ng-bind='user.full_name']"):
-            text = element.text
-            usersList.append(Data(name = text))
-        return usersList
+        if self.users_cache is None:
+            driver = self.app.driver
+            self.users_cache = []
+            for element in driver.find_elements_by_xpath("(//tr/td/span[contains(@title, 'Auto.test.user')])"):
+                text = element.text
+                self.users_cache.append(Data(name = text))
+        return list(self.users_cache)

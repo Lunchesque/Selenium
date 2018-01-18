@@ -34,3 +34,10 @@ class SessionHelper:
         driver = self.app.driver
         if len(driver.find_elements_by_css_selector("img.img-circle.toolbar-icon-container-item.ng-scope")) > 0:
             self.logout()
+
+    def being_on_users_page(self):
+        driver = self.app.driver
+        if  not driver.current_url == "https://172.20.9.134/#!/org/users":
+            self.open_users_list()
+        else:
+            pass

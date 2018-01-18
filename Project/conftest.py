@@ -13,13 +13,11 @@ def app(request):
         fixture.session.open_station()
         fixture.session.login_as_admin(userName = "999",
                                         admPass = "admADM1/")
-        fixture.session.open_users_list()
     else:
         if not fixture.is_valid():
             fixture = Application()
             fixture.session.open_station()
             fixture.session.login_as_admin()
-            fixture.session.open_users_list()
     return fixture
 
 @pytest.fixture(scope = "session", autouse = True)

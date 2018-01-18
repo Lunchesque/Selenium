@@ -1,3 +1,4 @@
 {
+  "tests/StationSmoke/test_login_as_admin.py::test_login_as_admin": true,
   "tests/test_add_all_types_of_users.py::test_login_new_admin": true
 }

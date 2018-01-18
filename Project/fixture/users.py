@@ -13,6 +13,7 @@ class UsersHelper:
 
     def creating_admin(self, data):
         driver = self.app.driver
+        self.app.session.being_on_users_page()
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
         Select(driver.find_element_by_name("role")).select_by_index(3)      #выбор роли пользователя, индекс - номер в выпадающем списке
@@ -34,6 +35,7 @@ class UsersHelper:
 
     def creating_operator(self, data):
         driver = self.app.driver
+        self.app.session.being_on_users_page()
         usersList = len(driver.find_elements_by_xpath("//span[contains(@ng-bind, 'full_name')]"))
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
@@ -55,6 +57,7 @@ class UsersHelper:
 
     def creating_watcher(self, data):
         driver = self.app.driver
+        self.app.session.being_on_users_page()
         usersList = len(driver.find_elements_by_xpath("//span[contains(@ng-bind, 'full_name')]"))
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
@@ -76,6 +79,7 @@ class UsersHelper:
 
     def creating_demo(self, data):
         driver = self.app.driver
+        self.app.session.being_on_users_page()
         usersList = len(driver.find_elements_by_xpath("//span[contains(@ng-bind, 'full_name')]"))
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
@@ -97,6 +101,7 @@ class UsersHelper:
 
     def deletion_auto_users(self):
         driver = self.app.driver
+        self.app.session.being_on_users_page()
         a = 1
         count = self.count()
         if count != 0:
@@ -121,7 +126,6 @@ class UsersHelper:
 
     users_cache = None
 
-
     def get_users_list(self):
         if self.users_cache is None:
             driver = self.app.driver
@@ -130,3 +134,7 @@ class UsersHelper:
                 text = element.text
                 self.users_cache.append(Data(name = text))
         return list(self.users_cache)
+
+    def admin_logged_validation(self):
+        driver = self.app.driver
+        assert driver.find_element_by_name("dskfjhdskjhfs") == True

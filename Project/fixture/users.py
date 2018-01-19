@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
+import os
 from model.data import Data
 from fixture.session import SessionHelper
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 
 class UsersHelper:
@@ -17,6 +19,10 @@ class UsersHelper:
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
         Select(driver.find_element_by_name("role")).select_by_index(3)      #выбор роли пользователя, индекс - номер в выпадающем списке
+
+        path = "/home/sergey.verkhovodko/selenium/Project/files/admin_avatar.jpg"
+        imgUploadEl = driver.find_element_by_xpath("//input[@name='avatar']")
+        imgUploadEl.send_keys(path)
 
         role = driver.find_element_by_name("role").get_attribute("value")
 
@@ -40,6 +46,11 @@ class UsersHelper:
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
         Select(driver.find_element_by_name("role")).select_by_index(2)      #выбор роли пользователя, индекс - номер в выпадающем списке
+        Select(driver.find_element_by_name('locale')).select_by_index(0)
+
+        path = "/home/sergey.verkhovodko/selenium/Project/files/oper_avatar.jpg"
+        imgUploadEl = driver.find_element_by_xpath("//input[@name='avatar']")
+        imgUploadEl.send_keys(path)
 
         role = driver.find_element_by_name("role").get_attribute("value")
 
@@ -63,6 +74,10 @@ class UsersHelper:
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
         Select(driver.find_element_by_name("role")).select_by_index(1)      #выбор роли пользователя, индекс - номер в выпадающем списке
 
+        path = "/home/sergey.verkhovodko/selenium/Project/files/watcher_avatar.jpg"
+        imgUploadEl = driver.find_element_by_xpath("//input[@name='avatar']")
+        imgUploadEl.send_keys(path)
+
         role = driver.find_element_by_name("role").get_attribute("value")
 
         driver.find_element_by_name("email").send_keys(data.email.format(role, data.userId))
@@ -84,6 +99,10 @@ class UsersHelper:
         addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")  #нахождение кнопки создания добавления пользователей
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()    #наведение курсора на кнопку добавления
         Select(driver.find_element_by_name("role")).select_by_index(0)      #выбор роли пользователя, индекс - номер в выпадающем списке
+
+        path = "/home/sergey.verkhovodko/selenium/Project/files/guest_avatar.png"
+        imgUploadEl = driver.find_element_by_xpath("//input[@name='avatar']")
+        imgUploadEl.send_keys(path)
 
         role = driver.find_element_by_name("role").get_attribute("value")
 
@@ -110,6 +129,7 @@ class UsersHelper:
                 if "Auto.test.user" in title:   #если имя в имени пользователя есть "Auto.test.user", то начинается удаление
                     btnNum = 5 + a      #индекс кнопки опции на странице для найденнгого пользователя
                     optionsBtn = driver.find_element_by_xpath("(//button[@type='button'])[{}]".format(btnNum))  #нахождение кнопки опции на странице для найденнгого пользователя
+                    #ActionChains(driver).pause(0.05).perform()
                     ActionChains(driver).move_to_element(optionsBtn).click(optionsBtn).perform()    #перемещение курсора на эту кнопку, чтобы сделать видимой, и нажатие
                     driver.find_element_by_link_text(u"Удалить").click()    #выбор из выпадающего списка удаление и нажатие
                     driver.find_element_by_xpath("//div[3]/button[contains(@class, 'primary')]").click()    #нажать на кнопку подтверждения удаления
@@ -122,6 +142,7 @@ class UsersHelper:
 
     def count(self):
         driver = self.app.driver
+        self.app.session.being_on_users_page()
         return len(driver.find_elements_by_xpath("(//tr/td/span[contains(@title, 'Auto.test.user')])"))
 
     users_cache = None
@@ -129,6 +150,7 @@ class UsersHelper:
     def get_users_list(self):
         if self.users_cache is None:
             driver = self.app.driver
+            self.app.session.being_on_users_page()
             self.users_cache = []
             for element in driver.find_elements_by_xpath("(//tr/td/span[contains(@title, 'Auto.test.user')])"):
                 text = element.text
@@ -137,4 +159,15 @@ class UsersHelper:
 
     def admin_logged_validation(self):
         driver = self.app.driver
-        assert driver.find_element_by_name("dskfjhdskjhfs") == True
+        try:
+            driver.find_element_by_xpath("//a[@uib-tooltip='Администрирование']")
+            driver.find_element_by_xpath("//a[@uib-tooltip='Настройки']")
+            driver.find_element_by_xpath("//a[@uib-tooltip='Помощь']")
+            driver.find_element_by_xpath("//img[@class='img-circle toolbar-icon-container-item ng-scope']")
+            driver.find_element_by_xpath("//a[@kp-icon-svg='globe']")
+            driver.find_element_by_xpath("//li[@ng-if='alarm']")
+            driver.find_element_by_xpath("//div[@class='btn btn-default navbar-btn dropdown-toggle']")
+            driver.find_element_by_xpath("//a[@class='navbar-brand']")
+        except NoSuchElementException:
+            return False
+        return True

@@ -11,13 +11,12 @@ def app(request):
     if fixture is None:
         fixture = Application()
         fixture.session.open_station()
-        fixture.session.login_as_admin(userName = "999",
-                                        admPass = "admADM1/")
+        fixture.session.login_as_admin(userName = "999", admPass = "admADM1/")
     else:
         if not fixture.is_valid():
             fixture = Application()
             fixture.session.open_station()
-            fixture.session.login_as_admin()
+            fixture.session.login_as_admin(userName = "999", admPass = "admADM1/")
     return fixture
 
 @pytest.fixture(scope = "session", autouse = True)

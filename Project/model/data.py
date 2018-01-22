@@ -11,7 +11,7 @@ class Data:
 
 
     def __repr__(self):
-        return "%s" % (self.name)
+        return "%s_%s_%s" % (self.name, self.userId, self.phone)
 
     def __eq__(self, other):
         return self.name == other.name

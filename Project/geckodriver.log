@@ -1,0 +1,419 @@
+1516693461946	geckodriver	INFO	geckodriver 0.19.1
+1516693461949	geckodriver	INFO	Listening on 127.0.0.1:46447
+1516693463029	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.dZjuM46u9a1Z"
+1516693463337	Marionette	INFO	Enabled via --marionette
+1516693464201	Marionette	INFO	Listening on port 35193
+1516693464257	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516693464297	Marionette	DEBUG	Register listener.js for window 2147483649
+1516693464395	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516693464408	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516693464408	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516693464846	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516693464887	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516693465047	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516693465056	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516693465057	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516693465438	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516693465465	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516693465989	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693466038	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516693468005	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693468488	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693468702	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693469039	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693469697	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516693469711	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516693469711	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516693470054	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516693470061	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 2432, Chrome_ChildThread] WARNING: pipe error (21): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 2432, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516693498646	geckodriver	INFO	geckodriver 0.19.1
+1516693498649	geckodriver	INFO	Listening on 127.0.0.1:50429
+1516693499728	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.9ReKKiLBSIJ5"
+1516693500047	Marionette	INFO	Enabled via --marionette
+1516693500892	Marionette	INFO	Listening on port 39039
+1516693500951	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516693501001	Marionette	DEBUG	Register listener.js for window 2147483649
+1516693501093	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516693501106	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516693501107	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516693501530	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516693501561	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516693501728	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516693501738	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516693501739	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516693502146	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516693502180	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516693502652	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693502700	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516693503801	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693504280	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693504494	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693504844	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693505759	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693506185	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693506400	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693506732	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516693507377	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516693507403	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516693507404	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516693507749	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516693507756	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 2956, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 2956, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516694549005	geckodriver	INFO	geckodriver 0.19.1
+1516694549007	geckodriver	INFO	Listening on 127.0.0.1:45123
+1516694550097	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.wPht4dipWZmo"
+1516694550435	Marionette	INFO	Enabled via --marionette
+1516694551307	Marionette	INFO	Listening on port 46863
+1516694551403	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516694551443	Marionette	DEBUG	Register listener.js for window 2147483649
+1516694551514	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516694551528	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516694551529	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516694551951	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516694551982	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516694552133	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516694552144	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516694552145	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516694552509	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516694552534	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516694553057	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694553105	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516694555100	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694555591	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694555809	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694556147	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694556815	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516694556830	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516694556831	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516694557166	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516694557173	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 10914, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 10914, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516694662188	geckodriver	INFO	geckodriver 0.19.1
+1516694662190	geckodriver	INFO	Listening on 127.0.0.1:53483
+1516694663272	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ux2qgFEpofIk"
+1516694663610	Marionette	INFO	Enabled via --marionette
+1516694664467	Marionette	INFO	Listening on port 39501
+1516694664479	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516694664524	Marionette	DEBUG	Register listener.js for window 2147483649
+1516694664658	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516694664681	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516694664681	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516694665098	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516694665136	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516694665309	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516694665320	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516694665321	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516694665699	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516694665733	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516694666259	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694666311	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516694667059	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516694667076	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516694667077	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516694667427	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516694667434	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 11767, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516694690042	geckodriver	INFO	geckodriver 0.19.1
+1516694690045	geckodriver	INFO	Listening on 127.0.0.1:36691
+1516694691123	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.8PpOJFpTh6c2"
+1516694691453	Marionette	INFO	Enabled via --marionette
+1516694692288	Marionette	INFO	Listening on port 41933
+1516694692343	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516694692389	Marionette	DEBUG	Register listener.js for window 2147483649
+1516694692508	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516694692522	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516694692522	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516694692954	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516694692979	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516694693164	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516694693173	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516694693174	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516694693573	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516694693604	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516694694131	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694694188	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516694695746	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+[Child 12103, Chrome_ChildThread] WARNING: pipe error (21): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 12103, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516694753370	geckodriver	INFO	geckodriver 0.19.1
+1516694753374	geckodriver	INFO	Listening on 127.0.0.1:37279
+1516694754455	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.gczgLSrw5qIj"
+1516694754787	Marionette	INFO	Enabled via --marionette
+1516694755630	Marionette	INFO	Listening on port 45381
+1516694755688	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516694755734	Marionette	DEBUG	Register listener.js for window 2147483649
+1516694755854	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516694755870	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516694755870	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516694756302	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516694756334	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516694756506	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516694756517	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516694756517	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516694756894	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516694756926	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516694757452	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694757510	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516694758869	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516694758887	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516694758888	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516694759234	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516694759239	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 12738, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516694807999	geckodriver	INFO	geckodriver 0.19.1
+1516694808001	geckodriver	INFO	Listening on 127.0.0.1:40241
+1516694809083	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.AaFnMsAX3NzM"
+1516694809431	Marionette	INFO	Enabled via --marionette
+1516694810264	Marionette	INFO	Listening on port 45545
+1516694810309	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516694810352	Marionette	DEBUG	Register listener.js for window 2147483649
+1516694810497	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516694810509	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516694810509	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516694810921	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516694810953	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516694811107	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516694811120	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516694811121	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516694811491	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516694811523	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516694811992	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694812041	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516694813498	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516694813515	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516694813516	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516694813862	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516694813867	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 13251, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 13251, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516694922030	geckodriver	INFO	geckodriver 0.19.1
+1516694922034	geckodriver	INFO	Listening on 127.0.0.1:44361
+1516694923116	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.wPaRicDWGULF"
+1516694923440	Marionette	INFO	Enabled via --marionette
+1516694924272	Marionette	INFO	Listening on port 41225
+1516694924328	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516694924374	Marionette	DEBUG	Register listener.js for window 2147483649
+1516694924478	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516694924490	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516694924490	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516694924936	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516694924962	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516694925127	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516694925135	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516694925136	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516694925495	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516694925524	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516694926056	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694926123	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516694928103	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694928591	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694928808	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694929149	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516694930501	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516694930514	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516694930515	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516694930862	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516694930869	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 14607, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 14607, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516695251593	geckodriver	INFO	geckodriver 0.19.1
+1516695251595	geckodriver	INFO	Listening on 127.0.0.1:51825
+1516695252681	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.fBq1qVIPtXMO"
+1516695253022	Marionette	INFO	Enabled via --marionette
+1516695253884	Marionette	INFO	Listening on port 39519
+1516695253889	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516695253939	Marionette	DEBUG	Register listener.js for window 2147483649
+1516695254065	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516695254089	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516695254089	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516695254518	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516695254554	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516695254745	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516695254754	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516695254755	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516695255113	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516695255143	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516695255593	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516695255655	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516695256665	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+[Child 16745, Chrome_ChildThread] WARNING: pipe error (35): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 16745, Chrome_ChildThread] WARNING: pipe error (21): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 16745, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516695417765	geckodriver	INFO	geckodriver 0.19.1
+1516695417768	geckodriver	INFO	Listening on 127.0.0.1:50155
+1516695418848	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.IOKUWyPC6jdt"
+1516695419161	Marionette	INFO	Enabled via --marionette
+1516695420020	Marionette	INFO	Listening on port 46851
+1516695420083	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516695420135	Marionette	DEBUG	Register listener.js for window 2147483649
+1516695420217	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516695420234	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516695420234	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516695420667	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516695420698	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516695420871	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516695420879	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516695420880	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516695421249	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516695421279	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516695421813	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516695421867	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516695423262	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516695423279	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516695423280	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516695423632	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516695423640	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 17911, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 17911, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1516695893788	geckodriver	INFO	geckodriver 0.19.1
+1516695893791	geckodriver	INFO	Listening on 127.0.0.1:36593
+1516695894873	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.76swyvHF2I9q"
+1516695895197	Marionette	INFO	Enabled via --marionette
+1516695896020	Marionette	INFO	Listening on port 37337
+1516695896082	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516695896124	Marionette	DEBUG	Register listener.js for window 2147483649
+1516695896219	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516695896243	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516695896243	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516695896664	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516695896701	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516695896868	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516695896879	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516695896880	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516695897240	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516695897269	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516695897809	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516695897859	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516695899226	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516695899243	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516695899244	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516695899586	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516695899593	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 21479, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 21479, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516696006032	geckodriver	INFO	geckodriver 0.19.1
+1516696006036	geckodriver	INFO	Listening on 127.0.0.1:45155
+1516696007116	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.FUAtO7Dksm4n"
+1516696007436	Marionette	INFO	Enabled via --marionette
+1516696008293	Marionette	INFO	Listening on port 36315
+1516696008341	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516696008391	Marionette	DEBUG	Register listener.js for window 2147483649
+1516696008477	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516696008510	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516696008510	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516696008948	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516696008976	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516696009127	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516696009148	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516696009149	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516696009523	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516696009558	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516696010090	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696010144	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516696011529	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696011743	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696012102	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696012985	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696013451	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696013666	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696014013	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696014889	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696015306	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696015518	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696015899	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696016643	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516696016661	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516696016663	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516696017009	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516696017017	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 22315, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 22315, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516696024889	geckodriver	INFO	geckodriver 0.19.1
+1516696024891	geckodriver	INFO	Listening on 127.0.0.1:51357
+1516696025973	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jM2J4HgH5mvq"
+1516696026310	Marionette	INFO	Enabled via --marionette
+1516696027217	Marionette	INFO	Listening on port 37709
+1516696027279	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516696027322	Marionette	DEBUG	Register listener.js for window 2147483649
+1516696027422	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516696027434	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516696027435	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516696027880	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516696027908	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516696028185	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516696028195	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516696028196	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516696028576	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516696029011	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/locations/320/plan"
+1516696029245	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696029296	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516696030734	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516696030761	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516696030762	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516696031121	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516696031129	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 22637, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 22637, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516696120550	geckodriver	INFO	geckodriver 0.19.1
+1516696120554	geckodriver	INFO	Listening on 127.0.0.1:37101
+1516696121634	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Spxir7omDLzP"
+1516696121971	Marionette	INFO	Enabled via --marionette
+1516696122874	Marionette	INFO	Listening on port 34731
+1516696122947	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516696122992	Marionette	DEBUG	Register listener.js for window 2147483649
+1516696123080	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516696123099	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516696123099	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516696123524	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516696123551	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516696123718	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516696123727	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516696123728	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516696124100	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516696124135	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516696124679	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696124747	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516696125771	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696125984	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516696126642	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516696126665	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516696126666	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516696127004	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516696127011	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 23426, Chrome_ChildThread] WARNING: pipe error (21): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 23426, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1516698003301	geckodriver	INFO	geckodriver 0.19.1
+1516698003303	geckodriver	INFO	Listening on 127.0.0.1:52905
+1516698004395	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jZ6iYtJJk1O7"
+1516698004828	Marionette	INFO	Enabled via --marionette
+1516698005753	Marionette	INFO	Listening on port 38329
+1516698005821	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516698005867	Marionette	DEBUG	Register listener.js for window 2147483649
+1516698005998	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516698006013	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516698006013	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516698006492	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516698006526	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516698006754	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/login"
+1516698006770	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/login"
+1516698006771	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/login"
+1516698007167	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/login"
+1516698007203	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/login"
+1516698007719	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516698007810	Marionette	DEBUG	Received DOM event "popstate" for "https://172.20.9.134/#!/org/users"
+1516698009821	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516698010346	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516698010561	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516698010941	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1516698012258	Marionette	DEBUG	Received DOM event "beforeunload" for "https://172.20.9.134/#!/org/users"
+1516698012276	Marionette	DEBUG	Received DOM event "pagehide" for "https://172.20.9.134/#!/org/users"
+1516698012277	Marionette	DEBUG	Received DOM event "unload" for "https://172.20.9.134/#!/org/users"
+1516698012685	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://172.20.9.134/#!/org/users"
+1516698012691	Marionette	DEBUG	Received DOM event "pageshow" for "https://172.20.9.134/#!/org/users"
+[Child 7907, Chrome_ChildThread] WARNING: pipe error (20): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 7907, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-itlqqH/firefox-57.0.4+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353

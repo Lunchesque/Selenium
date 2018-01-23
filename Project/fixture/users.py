@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os
+import time
 from model.data import Data
 from fixture.session import SessionHelper
 from selenium.webdriver.common.by import By
@@ -43,7 +43,7 @@ class UsersHelper:
         if data.role == 3:
             driver.find_element_by_name("enableNotifications").click()
         driver.find_element_by_xpath("//button[@ng-click='save()']").click()
-        ActionChains(driver).pause(0.1).perform()
+        #ActionChains(driver).pause(0.1).perform()
         self.users_cache = None
 
 
@@ -82,7 +82,7 @@ class UsersHelper:
             self.app.session.being_on_users_page()
             self.users_cache = []
             for element in driver.find_elements_by_xpath("(//tr/td/span[contains(@title, 'Auto.test.user')])"):
-                ActionChains(driver).pause(0.01).perform()
+                #ActionChains(driver).pause(0.01).perform()
                 text = element.text
                 self.users_cache.append(Data(name = text))
         return list(self.users_cache)

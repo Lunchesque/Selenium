@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os
+from fixture import application
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 
@@ -9,9 +9,7 @@ class SessionHelper:
     def __init__(self, app):
         self.app = app
 
-    def open_station(self):
-        driver = self.app.driver
-        driver.get("https://172.20.9.134/#!/login")
+
 
 
     def login_as_admin(self, userName, admPass):

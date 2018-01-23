@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 import pytest
-from random import choice
-from string import digits
 from model.data import Data
-from TestData.add_user import del_data
 
 
-@pytest.mark.parametrize("data", del_data, ids = [repr(x) for x in del_data])
+
+#@pytest.mark.skip(reason="no way of currently testing this")
 @pytest.mark.run(order = 2)
-def test_deleting_auto_users(app, data):
+def test_deleting_auto_users(app, data_fordel):
+    data = data_fordel
     if app.users.count() == 0:
         app.users.creating_users(data)
     old_users = app.users.get_users_list()

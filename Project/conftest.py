@@ -1,24 +1,23 @@
 # -*- coding: utf-8 -*-
-import pytest
+import pytest, json
 from model.data import Data
 from fixture.application import Application
 
 fixture = None
+target = None
 
 @pytest.fixture
 def app(request):
+    global target
     global fixture
     browser = request.config.getoption("--browser")
-    base_url = request.config.getoption("--url")
-    if fixture is None:
-        fixture = Application(browser = browser, base_url = base_url)
+    if target is None:
+        with open(request.config.getoption("--target")) as config_file:
+            target = json.load(config_file)
+    if fixture is None or not fixture.is_valid():
+        fixture = Application(browser = browser, base_url = target["base_url"])
         fixture.open_station()
-        fixture.session.login_as_admin(userName = "999", admPass = "admADM1/")
-    else:
-        if not fixture.is_valid():
-            fixture = Application(browser = browser, base_url = base_url)
-            fixture.open_station()
-            fixture.session.login_as_admin(userName = "999", admPass = "admADM1/")
+        fixture.session.login_as_admin(userName = target["userName"], admPass = target["admPass"])
     return fixture
 
 @pytest.fixture(scope = "session", autouse = True)
@@ -32,4 +31,4 @@ def stop(request):
 
 def pytest_addoption(parser):
     parser.addoption("--browser", action = "store", default = "chrome")
-    parser.addoption("--url", action = "store", default = "https://172.20.9.134/#!/login")
+    parser.addoption("--target", action = "store", default = "target.json")

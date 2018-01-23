@@ -3,13 +3,10 @@ import pytest
 from random import choice
 from string import digits
 from model.data import Data
+from TestData.add_user import del_data
 
-testdata = [
-    Data(email = "AutoTestUser_{}_{}@ki.ki", name = "Auto.test.user_{}_{}", userId = (''.join(choice(digits) for i in range(5))),
-            phone = (''.join(choice(digits) for i in range(15))), role = 0)
-]
 
-@pytest.mark.parametrize("data", testdata, ids = [repr(x) for x in testdata])
+@pytest.mark.parametrize("data", del_data, ids = [repr(x) for x in del_data])
 def test_deleting_auto_users(app, data):
     if app.users.count() == 0:
         app.users.creating_users(data)

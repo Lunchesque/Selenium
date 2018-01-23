@@ -3,17 +3,9 @@ import pytest
 from random import choice
 from string import digits
 from model.data import Data
+from TestData.add_user import testdata
 
-testdata = [
-    Data(email = "AutoTestUser_{}_{}@ki.ki", name = "Auto.test.user_{}_{}", userId = (''.join(choice(digits) for i in range(5))),
-            phone = (''.join(choice(digits) for i in range(15))), role = 3),
-    Data(email = "AutoTestUser_{}_{}@ki.ki", name = "Auto.test.user_{}_{}", userId = (''.join(choice(digits) for i in range(5))),
-            phone = (''.join(choice(digits) for i in range(15))), role = 2),
-    Data(email = "AutoTestUser_{}_{}@ki.ki", name = "Auto.test.user_{}_{}", userId = (''.join(choice(digits) for i in range(5))),
-            phone = (''.join(choice(digits) for i in range(15))), role = 1),
-    Data(email = "AutoTestUser_{}_{}@ki.ki", name = "Auto.test.user_{}_{}", userId = (''.join(choice(digits) for i in range(5))),
-            phone = (''.join(choice(digits) for i in range(15))), role = 0)
-]
+
 
 @pytest.mark.parametrize("data", testdata, ids = [repr(x) for x in testdata])
 def test_creating_users(app, data):

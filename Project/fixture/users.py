@@ -43,7 +43,7 @@ class UsersHelper:
         if data.role == 3:
             driver.find_element_by_name("enableNotifications").click()
         driver.find_element_by_xpath("//button[@ng-click='save()']").click()
-        #ActionChains(driver).pause(0.1).perform()
+        ActionChains(driver).pause(0.1).perform()
         self.users_cache = None
 
 

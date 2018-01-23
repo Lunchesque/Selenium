@@ -13,7 +13,7 @@ stationSmokeData = [
             phone = (''.join(choice(digits) for i in range(15))), role = 0)
 ]
 
-testdata = [
+addAllUsersData = [
     Data(email = "AutoTestUser_{}_{}@ki.ki", name = "Auto.test.user_{}_{}", userId = (''.join(choice(digits) for i in range(5))),
             phone = (''.join(choice(digits) for i in range(15))), role = 3),
     Data(email = "AutoTestUser_{}_{}@ki.ki", name = "Auto.test.user_{}_{}", userId = (''.join(choice(digits) for i in range(5))),

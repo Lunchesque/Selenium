@@ -3,11 +3,11 @@ import pytest
 from random import choice
 from string import digits
 from model.data import Data
-from TestData.add_user import testdata
+from TestData.add_user import addAllUsersData
 
 
 
-@pytest.mark.parametrize("data", testdata, ids = [repr(x) for x in testdata])
+@pytest.mark.parametrize("data", addAllUsersData, ids = [repr(x) for x in addAllUsersData])
 @pytest.mark.run(order = 1)
 def test_creating_users(app, data):
     old_users = app.users.get_users_list()

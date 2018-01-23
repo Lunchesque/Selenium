@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import pytest, json
+import pytest, json, os.path
 from model.data import Data
 from fixture.application import Application
 
@@ -12,8 +12,9 @@ def app(request):
     global fixture
     browser = request.config.getoption("--browser")
     if target is None:
-        with open(request.config.getoption("--target")) as config_file:
-            target = json.load(config_file)
+        config_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), request.config.getoption("--target")) #необходимо тольк для винды
+        with open(config_file) as f:
+            target = json.load(f)
     if fixture is None or not fixture.is_valid():
         fixture = Application(browser = browser, base_url = target["base_url"])
         fixture.open_station()

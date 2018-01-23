@@ -8,6 +8,7 @@ from TestData.add_user import testdata
 
 
 @pytest.mark.parametrize("data", testdata, ids = [repr(x) for x in testdata])
+@pytest.mark.run(order = 1)
 def test_creating_users(app, data):
     old_users = app.users.get_users_list()
     app.users.creating_users(data)

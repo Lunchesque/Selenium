@@ -7,6 +7,7 @@ from TestData.add_user import del_data
 
 
 @pytest.mark.parametrize("data", del_data, ids = [repr(x) for x in del_data])
+@pytest.mark.run(order = 2)
 def test_deleting_auto_users(app, data):
     if app.users.count() == 0:
         app.users.creating_users(data)

@@ -3,9 +3,10 @@ import pytest
 from random import choice
 from string import digits
 from model.data import Data
-from TestData.add_user import testdata
+from TestData.add_user import stationSmokeData
 
-@pytest.mark.parametrize("data", testdata, ids = [repr(x) for x in testdata])
+@pytest.mark.skip(reason="no way of currently testing this")
+@pytest.mark.parametrize("data", stationSmokeData, ids = [repr(x) for x in stationSmokeData])
 def test_probe(app, data):
     old_users = app.users.get_users_list()
     app.users.creating_users(data)

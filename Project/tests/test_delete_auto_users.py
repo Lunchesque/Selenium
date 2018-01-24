@@ -6,8 +6,8 @@ from model.data import Data
 
 #@pytest.mark.skip(reason="no way of currently testing this")
 @pytest.mark.run(order = 2)
-def test_deleting_auto_users(app, data_fordel):
-    data = data_fordel
+def test_deleting_auto_users(app, json_fordel):
+    data = json_fordel
     if app.users.count() == 0:
         app.users.creating_users(data)
     old_users = app.users.get_users_list()

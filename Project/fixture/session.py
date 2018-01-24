@@ -9,9 +9,6 @@ class SessionHelper:
     def __init__(self, app):
         self.app = app
 
-
-
-
     def login_as_admin(self, userName, admPass):
         driver = self.app.driver
         driver.find_element_by_xpath("//input[@type='text']").send_keys(userName)

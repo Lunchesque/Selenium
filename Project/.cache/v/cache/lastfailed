@@ -75,7 +75,14 @@
   "tests/test_probe.py::test_probe": true,
   "tests/test_probe.py::test_probe[<model.data.Data object at 0x7f9da4f425c0>]": true,
   "tests/test_probe.py::test_probe[<model.data.Data object at 0x7ff4b108d6d8>]": true,
+  "tests/test_probe.py::test_probe[Auto.test.user_{}_{}_10191_751789336505960]": true,
   "tests/test_probe.py::test_probe[Auto.test.user_{}_{}_14217_375359439713060]": true,
+  "tests/test_probe.py::test_probe[Auto.test.user_{}_{}_54552_175141009912834]": true,
+  "tests/test_probe.py::test_probe[Auto.test.user_{}_{}_60819_260778601576043]": true,
+  "tests/test_probe.py::test_probe[Auto.test.user_{}_{}_64168_699543765511597]": true,
+  "tests/test_probe.py::test_probe[Auto.test.user_{}_{}_67272_326836763404301]": true,
   "tests/test_probe.py::test_probe[Auto.test.user_{}_{}_70588_696207865563784]": true,
+  "tests/test_probe.py::test_probe[Auto.test.user_{}_{}_77725_030391578249595]": true,
+  "tests/test_probe.py::test_probe[Auto.test.user_{}_{}_93318_397164984931633]": true,
   "tests/test_probe.py::test_probe[Auto.test.user_{}_{}_95229_306054504598468]": true
 }

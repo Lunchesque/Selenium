@@ -1,1 +1,3 @@
-{}
+{
+  "test_probe.py::test_probe": true
+}

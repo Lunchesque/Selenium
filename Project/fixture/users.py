@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-import time
+import json
 from model.data import Data
 from fixture.session import SessionHelper
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 
 class UsersHelper:

@@ -19,13 +19,13 @@ class UsersHelper:
         ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()
         Select(driver.find_element_by_name("role")).select_by_index(data.role)
         if data.role == 3:
-            path = "/home/sergey.verkhovodko/selenium/Project/files/admin_avatar.jpg"
+            path = "/home/sergey/selenium/Project/files/admin_avatar.jpg"
         elif data.role == 2:
-            path = "/home/sergey.verkhovodko/selenium/Project/files/oper_avatar.jpg"
+            path = "/home/sergey/selenium/Project/files/oper_avatar.jpg"
         elif data.role == 1:
-            path = "/home/sergey.verkhovodko/selenium/Project/files/watcher_avatar.jpg"
+            path = "/home/sergey/selenium/Project/files/watcher_avatar.jpg"
         elif data.role == 0:
-            path = "/home/sergey.verkhovodko/selenium/Project/files/guest_avatar.png"
+            path = "/home/sergey/selenium/Project/files/guest_avatar.png"
         imgUploadEl = driver.find_element_by_xpath("//input[@name='avatar']")
         imgUploadEl.send_keys(path)
 

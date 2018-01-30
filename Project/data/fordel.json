@@ -1,10 +1,10 @@
 [
   {
-    "userId": "98219",
     "role": 0,
-    "phone": "096053096403600",
+    "userId": "22939",
     "email": "AutoTestUser_{}_{}@ki.ki",
-    "py/object": "model.data.Data",
-    "name": "Auto.test.user_{}_{}"
+    "phone": "576362046515101",
+    "name": "Auto.test.user_{}_{}",
+    "py/object": "model.data.Data"
   }
 ]

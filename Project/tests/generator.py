@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 import jsonpickle, getopt
-import os.path, sys
+import os.path, sys, pytest
 from random import choice
 from string import digits
 from model.data import Data
 
-def test_generator():
+@pytest.mark.tryfirst
+def test_generator(app):
     testdata = [
         Data(email = "AutoTestUser_{}_{}@ki.ki", name = "Auto.test.user_{}_{}", userId = (''.join(choice(digits) for i in range(5))),
                 phone = (''.join(choice(digits) for i in range(15))), role = 3),

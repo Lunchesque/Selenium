@@ -1,11 +1,11 @@
 [
   {
-    "userId": "07989",
-    "py/object": "model.data.Data",
-    "email": "sergey.verkhovodko+1@synesis.ru",
-    "name": "Auto.test.user_{}_{}",
+    "phone": "345335604900358",
     "role": 3,
+    "name": "Auto.test.user_{}_{}",
+    "email": "sergey.verkhovodko+1@synesis.ru",
+    "py/object": "model.data.Data",
     "placeId": null,
-    "phone": "238267882492595"
+    "userId": "50789"
   }
 ]

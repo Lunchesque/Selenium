@@ -3,6 +3,7 @@
 from model.data import Data
 from selenium import webdriver
 from fixture.users import UsersHelper
+from fixture.places import PlacesHelper
 from fixture.session import SessionHelper
 
 
@@ -19,6 +20,7 @@ class Application:
         self.driver.implicitly_wait(2)
         self.session = SessionHelper(self)
         self.users = UsersHelper(self)
+        self.places = PlacesHelper(self)
         self.base_url = base_url
         self.gmail = gmail
 

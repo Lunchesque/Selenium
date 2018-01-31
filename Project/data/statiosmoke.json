@@ -1,29 +1,29 @@
 [
   {
-    "phone": "259968321632075",
-    "userId": "74561",
+    "userId": "49043",
     "py/object": "model.data.Data",
-    "name": "Auto.test.user_{}_{}",
     "email": "AutoTestUser_{}_{}@ki.ki",
+    "name": "Auto.test.user_{}_{}",
     "role": 2,
-    "placeId": null
+    "placeId": null,
+    "phone": "141508410078596"
   },
   {
-    "phone": "691076265152829",
-    "userId": "44985",
+    "userId": "29212",
     "py/object": "model.data.Data",
-    "name": "Auto.test.user_{}_{}",
     "email": "AutoTestUser_{}_{}@ki.ki",
+    "name": "Auto.test.user_{}_{}",
     "role": 1,
-    "placeId": null
+    "placeId": null,
+    "phone": "947884955802730"
   },
   {
-    "phone": "829031789122696",
-    "userId": "12067",
+    "userId": "73387",
     "py/object": "model.data.Data",
-    "name": "Auto.test.user_{}_{}",
     "email": "AutoTestUser_{}_{}@ki.ki",
+    "name": "Auto.test.user_{}_{}",
     "role": 0,
-    "placeId": null
+    "placeId": null,
+    "phone": "772807300811634"
   }
 ]

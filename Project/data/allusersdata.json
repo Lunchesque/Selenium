@@ -1,38 +1,38 @@
 [
   {
-    "phone": "348287582993170",
-    "userId": "82362",
+    "userId": "14930",
     "py/object": "model.data.Data",
-    "name": "Auto.test.user_{}_{}",
     "email": "AutoTestUser_{}_{}@ki.ki",
+    "name": "Auto.test.user_{}_{}",
     "role": 3,
-    "placeId": null
+    "placeId": null,
+    "phone": "018080506515547"
   },
   {
-    "phone": "767627824592219",
-    "userId": "57817",
+    "userId": "08568",
     "py/object": "model.data.Data",
-    "name": "Auto.test.user_{}_{}",
     "email": "AutoTestUser_{}_{}@ki.ki",
+    "name": "Auto.test.user_{}_{}",
     "role": 2,
-    "placeId": null
+    "placeId": null,
+    "phone": "768084557393809"
   },
   {
-    "phone": "391521941568314",
-    "userId": "07739",
+    "userId": "63511",
     "py/object": "model.data.Data",
-    "name": "Auto.test.user_{}_{}",
     "email": "AutoTestUser_{}_{}@ki.ki",
+    "name": "Auto.test.user_{}_{}",
     "role": 1,
-    "placeId": null
+    "placeId": null,
+    "phone": "580280904020497"
   },
   {
-    "phone": "775970421226300",
-    "userId": "24298",
+    "userId": "48553",
     "py/object": "model.data.Data",
-    "name": "Auto.test.user_{}_{}",
     "email": "AutoTestUser_{}_{}@ki.ki",
+    "name": "Auto.test.user_{}_{}",
     "role": 0,
-    "placeId": null
+    "placeId": null,
+    "phone": "435185410599612"
   }
 ]

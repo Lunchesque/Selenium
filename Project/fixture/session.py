@@ -37,3 +37,11 @@ class SessionHelper:
             self.open_users_list()
         else:
             pass
+
+    def login_gmail(self):
+        driver = self.app.driver
+        driver.find_element_by_xpath("//input[@type='email']").send_keys("sergey.verkhovodko@synesis.ru")
+        driver.find_element_by_xpath("//content/span").click()
+        driver.find_element_by_name("password").send_keys("19051993abcd")
+        ActionChains(driver).pause(0.2).perform()
+        driver.find_element_by_xpath("//div[2]/div/div/content").click()

@@ -1,4 +1,5 @@
 {
+  "gmail" : "https://mail.google.com/mail/u/0/#inbox",
   "base_url" : "https://172.20.9.134/#!/login",
   "userName" : "999",
   "admPass" : "admADM1/"

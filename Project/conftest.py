@@ -17,7 +17,7 @@ def app(request):
         with open(config_file) as f:
             target = json.load(f)
     if fixture is None or not fixture.is_valid():
-        fixture = Application(browser = browser, base_url = target["base_url"])
+        fixture = Application(browser = browser, base_url = target["base_url"], gmail = "")
         fixture.open_station()
         fixture.session.login_as_admin(userName = target["userName"], admPass = target["admPass"])
     return fixture

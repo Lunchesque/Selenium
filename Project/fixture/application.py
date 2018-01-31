@@ -8,7 +8,7 @@ from fixture.session import SessionHelper
 
 class Application:
 
-    def __init__(self, browser, base_url):
+    def __init__(self, browser, base_url, gmail):
         if browser == "firefox":
             self.driver = webdriver.Firefox()
         elif browser == "chrome":
@@ -16,10 +16,11 @@ class Application:
         else:
             raise ValueError("Unrecognized browser %s" % browser)
         self.driver.maximize_window()
-        self.driver.implicitly_wait(1)
+        self.driver.implicitly_wait(2)
         self.session = SessionHelper(self)
         self.users = UsersHelper(self)
         self.base_url = base_url
+        self.gmail = gmail
 
     def is_valid(self):     #прверка, что находимся на необходимой странице (валидация сессии)
         try:

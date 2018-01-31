@@ -46,6 +46,19 @@ class UsersHelper:
         self.users_cache = None
 
 
+    def creating_for_mail(self, data):
+        driver = self.app.driver
+        self.app.session.being_on_users_page()
+        addBtn = driver.find_element_by_xpath("//button[contains(@ng-click, 'create()')]")
+        ActionChains(driver).move_to_element(addBtn).click(addBtn).perform()
+        Select(driver.find_element_by_name("role")).select_by_index(data.role)
+        driver.find_element_by_name("email").send_keys(data.email)
+        driver.find_element_by_name("fullName").send_keys(data.name.format(data.role, data.userId))
+        driver.find_element_by_xpath("//button[@ng-click='save()']").click()
+        ActionChains(driver).pause(0.1).perform()
+        self.users_cache = None
+
+
     def deletion_auto_users(self):
         driver = self.app.driver
         self.app.session.being_on_users_page()
@@ -100,3 +113,22 @@ class UsersHelper:
         except NoSuchElementException:
             return False
         return True
+
+# - Адрес: 172.20.9.134 Email: sergey.verkhovodko+1@synesis.ru Пароль: y2ET;AJu
+
+    def mail_check(self):
+        driver = self.app.driver
+        self.app.session.logout()
+        ActionChains(driver).pause(12).perform()
+        driver.get("https://mail.google.com/mail/u/0/#inbox")
+        self.app.session.login_gmail()
+        #driver.find_element_by_xpath("//a[contains(text(),'StationUsers')]").click()
+        ActionChains(driver).pause(1).perform()
+        text = driver.find_element_by_xpath("//tr[2]/td[6]/div/div/div/span[2]").text
+        passwd = text[70:]
+        driver.get("https://172.20.9.134/#!/login")
+        driver.find_element_by_xpath("//input[@type='text']").send_keys("sergey.verkhovodko+1@synesis.ru")
+        ActionChains(driver).pause(0.1).perform()
+        driver.find_element_by_xpath("//input[@type='password']").send_keys(passwd)
+        ActionChains(driver).pause(0.1).perform()
+        driver.find_element_by_xpath("//input[@value='Log In']").click()

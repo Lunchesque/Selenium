@@ -2,7 +2,6 @@
 import pytest
 from model.data import Data
 
-
 #@pytest.mark.skip(reason="no way of currently testing this")
 @pytest.mark.run(order = 1)
 def test_creating_users(app, json_allusersdata):

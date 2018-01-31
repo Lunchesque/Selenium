@@ -21,3 +21,4 @@ class PlacesHelper:
         driver.find_element_by_xpath("(//li[2])[1]").click()
         Select(driver.find_element_by_name("localserver_id")).select_by_index(1)
         driver.find_element_by_xpath("(//button[1])[5]").click()
+        ActionChains(driver).pause(0.2).perform()

@@ -116,8 +116,9 @@ class UsersHelper:
 
 # - Адрес: 172.20.9.134 Email: sergey.verkhovodko+1@synesis.ru Пароль: y2ET;AJu
 
-    def mail_check(self):
+    def mail_check(self, data):
         driver = self.app.driver
+        ActionChains(driver).pause(0.1).perform()
         self.app.session.logout()
         ActionChains(driver).pause(12).perform()
         driver.get("https://mail.google.com/mail/u/0/#inbox")
@@ -125,10 +126,13 @@ class UsersHelper:
         #driver.find_element_by_xpath("//a[contains(text(),'StationUsers')]").click()
         ActionChains(driver).pause(1).perform()
         text = driver.find_element_by_xpath("//tr[2]/td[6]/div/div/div/span[2]").text
-        passwd = text[70:]
+        passwd = text[71:]
         driver.get("https://172.20.9.134/#!/login")
-        driver.find_element_by_xpath("//input[@type='text']").send_keys("sergey.verkhovodko+1@synesis.ru")
+        driver.find_element_by_xpath("//input[@type='text']").send_keys(data.email)
         ActionChains(driver).pause(0.1).perform()
         driver.find_element_by_xpath("//input[@type='password']").send_keys(passwd)
         ActionChains(driver).pause(0.1).perform()
         driver.find_element_by_xpath("//input[@value='Log In']").click()
+        self.app.session.logout()
+        ActionChains(driver).pause(0.1).perform()
+        self.app.session.login_as_admin(userName = "999", admPass = "admADM1/")

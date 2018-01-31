@@ -1,11 +1,12 @@
 [
   {
-    "phone": "345335604900358",
-    "role": 3,
-    "name": "Auto.test.user_{}_{}",
-    "email": "sergey.verkhovodko+1@synesis.ru",
     "py/object": "model.data.Data",
+    "email": "sergey.verkhovodko+13@synesis.ru",
+    "name": "Auto.test.user_{}_{}",
+    "mymail": null,
+    "userId": "91968",
     "placeId": null,
-    "userId": "50789"
+    "phone": "769715660734012",
+    "role": 3
   }
 ]

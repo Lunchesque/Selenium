@@ -6,6 +6,7 @@ from random import choice
 from string import digits
 
 def test_generator(app):
+
     testdata = [
         Data(name = "Auto.test.place_{}", placeId = (''.join(choice(digits) for i in range(5))))
     ]
@@ -20,7 +21,8 @@ def test_generator(app):
 
 
     testdata = [
-        Data(email = "sergey.verkhovodko+1@synesis.ru", name = "Auto.test.user_{}_{}", userId = (''.join(choice(digits) for i in range(5))),
+        Data(email = "sergey.verkhovodko+{}@synesis.ru".format(''.join(choice(digits) for i in range(2))),
+                name = "Auto.test.user_{}_{}", userId = (''.join(choice(digits) for i in range(5))),
                 phone = (''.join(choice(digits) for i in range(15))), role = 3)
     ]
 

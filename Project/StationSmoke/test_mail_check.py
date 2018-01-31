@@ -7,4 +7,4 @@ def test_mail_check(app, json_mailcheck):
     app.users.creating_for_mail(data)
     #assert len(old_users) + 1 == len(app.users.get_users_list())
     new_users = app.users.get_users_list()
-    app.users.mail_check()
+    app.users.mail_check(data)

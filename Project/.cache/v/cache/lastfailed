@@ -3,6 +3,7 @@
   "StationSmoke/test_creating_users.py::test_creating_users[Auto.test.user_{}_{}_00842_190899761515763]": true,
   "StationSmoke/test_creating_users.py::test_creating_users[Auto.test.user_{}_{}_09721_626905233117970]": true,
   "StationSmoke/test_creating_users.py::test_creating_users[Auto.test.user_{}_{}_67467_210852912051407]": true,
+  "StationSmoke/test_mail_check.py::test_mail_check[Auto.test.user_{}_{}_78999_399090621578501]": true,
   "tests/test_add_all_types_of_users.py::test_create_demo": true,
   "tests/test_add_all_types_of_users.py::test_create_demo[Auto.test.user_{}_{}]": true,
   "tests/test_add_all_types_of_users.py::test_create_oprator": true,

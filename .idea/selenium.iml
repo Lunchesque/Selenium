@@ -5,8 +5,6 @@
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Project/data" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Project/files" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Project/generator" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Project/model" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Project/tests" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Project" isTestSource="false" />
     </content>

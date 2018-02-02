@@ -15,10 +15,27 @@ class SessionHelper:
         driver.find_element_by_xpath("//input[@type='password']").send_keys(admPass)
         driver.find_element_by_xpath("//input[@value='Log In']").click()
 
+    def login_server(self):
+        driver = self.app.driver
+        driver.get("https://172.20.9.104/#/login")
+        driver.find_element_by_xpath("(//input)[1]").send_keys("admin")
+        driver.find_element_by_xpath("(//input)[2]").send_keys("qa2018")
+        driver.find_element_by_xpath("//button[@type='submit']").click()
+
     def open_users_list(self):
         driver = self.app.driver
         driver.find_element_by_xpath("(//a[contains(@href, '#')])[14]").click()
         driver.find_element_by_link_text(u"Пользователи").click()
+
+    def open_servs_view(self):
+        driver = self.app.driver
+        driver.find_element_by_xpath("(//a[contains(@href, '#')])[11]").click()
+        driver.find_element_by_link_text(u"Серверы").click()
+
+    def open_org_view(self):
+        driver = self.app.driver
+        driver.find_element_by_xpath("(//a[contains(@href, '#')])[14]").click()
+        driver.find_element_by_link_text(u"Организация").click()
 
     def logout(self):
         driver = self.app.driver
@@ -35,6 +52,13 @@ class SessionHelper:
         driver = self.app.driver
         if  not driver.current_url == "https://172.20.9.134/#!/org/users":
             self.open_users_list()
+        else:
+            pass
+
+    def being_on_servs_page(self):
+        driver = self.app.driver
+        if  not driver.current_url == "https://172.20.9.134/#!/org/diagnostic":
+            self.open_servs_view()
         else:
             pass
 

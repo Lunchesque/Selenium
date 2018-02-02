@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from fixture.clouds import CloudsHelper 
 from model.data import Data
 from selenium import webdriver
 from fixture.users import UsersHelper
@@ -21,6 +22,7 @@ class Application:
         self.session = SessionHelper(self)
         self.users = UsersHelper(self)
         self.places = PlacesHelper(self)
+        self.clouds = CloudsHelper(self)
         self.base_url = base_url
         self.gmail = gmail
 

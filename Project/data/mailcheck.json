@@ -1,12 +1,12 @@
 [
   {
-    "py/object": "model.data.Data",
-    "email": "sergey.verkhovodko+13@synesis.ru",
-    "name": "Auto.test.user_{}_{}",
+    "email": "sergey.verkhovodko+85@synesis.ru",
     "mymail": null,
-    "userId": "91968",
+    "role": 3,
     "placeId": null,
-    "phone": "769715660734012",
-    "role": 3
+    "py/object": "model.data.Data",
+    "userId": "46486",
+    "name": "Auto.test.user_{}_{}",
+    "phone": "265683500499347"
   }
 ]

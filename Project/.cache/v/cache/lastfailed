@@ -1,5 +1,6 @@
 {
   "StationSmoke/test_2creating_users.py::test_creating_users": true,
+  "StationSmoke/test_add_cloud.py::test_add_cloud": true,
   "StationSmoke/test_creating_users.py::test_creating_users[Auto.test.user_{}_{}_00842_190899761515763]": true,
   "StationSmoke/test_creating_users.py::test_creating_users[Auto.test.user_{}_{}_09721_626905233117970]": true,
   "StationSmoke/test_creating_users.py::test_creating_users[Auto.test.user_{}_{}_15853_534424114497417]": true,

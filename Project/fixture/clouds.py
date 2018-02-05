@@ -20,7 +20,11 @@ class CloudsHelper:
         driver.find_element_by_xpath("//div[@kp-icon-svg='settings-20']").click()
         driver.find_element_by_link_text("Сеть").click()
         driver.find_element_by_link_text("Облака").click()
-        driver.find_element_by_link_text("Добавить облако").click()
+        if len(driver.find_elements_by_xpath("//tr")) > 0:
+            driver.find_element_by_xpath("//button[@name='del0']").click()
+            driver.find_element_by_xpath("//button[@ng-click='confirm()']").click()
+        ActionChains(driver).pause(0.3).perform()
+        driver.find_element_by_xpath("//a[@ng-click='createCloudRequest()']").click()
         driver.find_element_by_xpath("//input[@type='url']").send_keys(vpnlink)
         driver.find_element_by_xpath("(//button[1])[1]").click()
         ActionChains(driver).pause(0.3).perform()

@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.common.exceptions import NoSuchElementException
 
 class PlacesHelper:
 
@@ -31,7 +32,10 @@ class PlacesHelper:
         count = self.count()
         if count != 0:
             while count != 0:
-                title = driver.find_element_by_xpath("(//div[contains(@class, 'location-name')])[{}]".format(a)).get_attribute("title")
+                try:
+                    title = driver.find_element_by_xpath("(//div[contains(@class, 'location-name')])[{}]".format(a)).get_attribute("title")
+                except NoSuchElementException:
+                    pass
                 if "Auto.test" in title:   #если имя в имени пользователя есть "Auto.test.user", то начинается удаление
                     doc = driver.find_element_by_xpath("(//div[contains(@class, 'location-name')])[{}]".format(a))
                     ActionChains(driver).move_to_element(doc).perform()
@@ -40,10 +44,17 @@ class PlacesHelper:
                     driver.find_element_by_css_selector("button.btn.btn-primary.ng-binding").click()
                     count -= 1
                     ActionChains(driver).pause(0.1).perform()
+                elif self.get_places() < a:
+                    break
                 else:   #увеличение счетчика, если в списке не автопользователь
                     a += 1
         else:
             pass
+
+    def get_places(self):
+        driver = self.app.driver
+        allplaces = driver.find_elements_by_xpath("//li[@class='sidebar-list__item ng-scope']")
+        return len(allplaces)
 
     def count(self):
         driver = self.app.driver

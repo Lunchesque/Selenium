@@ -9,7 +9,6 @@
   "StationSmoke/test_creating_users.py::test_creating_users[Auto.test.user_{}_{}_38962_289307815577953]": true,
   "StationSmoke/test_creating_users.py::test_creating_users[Auto.test.user_{}_{}_55250_331322856821248]": true,
   "StationSmoke/test_creating_users.py::test_creating_users[Auto.test.user_{}_{}_67467_210852912051407]": true,
-  "StationSmoke/test_delete_place.py::test_deleting_auto_places": true,
   "StationSmoke/test_mail_check.py::test_mail_check[Auto.test.user_{}_{}_02657_200915955671840]": true,
   "StationSmoke/test_mail_check.py::test_mail_check[Auto.test.user_{}_{}_15659_882428525580226]": true,
   "StationSmoke/test_mail_check.py::test_mail_check[Auto.test.user_{}_{}_24871_430848367004251]": true,

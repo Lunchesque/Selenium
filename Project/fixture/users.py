@@ -114,8 +114,6 @@ class UsersHelper:
             return False
         return True
 
-# - Адрес: 172.20.9.134 Email: sergey.verkhovodko+1@synesis.ru Пароль: y2ET;AJu
-
     def mail_check(self, data):
         driver = self.app.driver
         ActionChains(driver).pause(0.1).perform()

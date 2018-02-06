@@ -15,10 +15,36 @@ class PlacesHelper:
 
     def create_new_place(self, data):
         driver = self.app.driver
-        driver.find_element_by_xpath("(//li/a)[3]").click()
+        self.app.session.being_on_locations_page()
         driver.find_element_by_xpath("(//button)[3]").click()
-        driver.find_element_by_xpath("//input[@name='_name']").send_keys(data.placeId.format(data.placeId))
+        driver.find_element_by_xpath("//input[@name='_name']").send_keys(data.name.format(data.placeId))
         driver.find_element_by_xpath("(//li[2])[1]").click()
         Select(driver.find_element_by_name("localserver_id")).select_by_index(1)
-        driver.find_element_by_xpath("(//button[1])[5]").click()
+        ActionChains(driver).pause(0.1).perform()
+        driver.find_element_by_xpath("//button[@ng-click='$ctrl.save()']").click()
         ActionChains(driver).pause(0.2).perform()
+
+    def deletion_auto_places(self):
+        driver = self.app.driver
+        self.app.session.being_on_locations_page()
+        a = 1
+        count = self.count()
+        if count != 0:
+            while count != 0:
+                title = driver.find_element_by_xpath("(//div[contains(@class, 'location-name')])[{}]".format(a)).get_attribute("title")
+                if "Auto.test" in title:   #если имя в имени пользователя есть "Auto.test.user", то начинается удаление
+                    doc = driver.find_element_by_xpath("(//div[contains(@class, 'location-name')])[{}]".format(a))
+                    ActionChains(driver).move_to_element(doc).perform()
+                    driver.find_element_by_xpath("(//button[contains(@class, 'btn dots-menu')])[{}]".format(a)).click()
+                    driver.find_element_by_link_text(u"Удалить").click()
+                    driver.find_element_by_css_selector("button.btn.btn-primary.ng-binding").click()
+                    count -= 1
+                    ActionChains(driver).pause(0.1).perform()
+                else:   #увеличение счетчика, если в списке не автопользователь
+                    a += 1
+        else:
+            pass
+
+    def count(self):
+        driver = self.app.driver
+        return len(driver.find_elements_by_xpath("//div[contains(@title, 'Auto.test.place')]"))

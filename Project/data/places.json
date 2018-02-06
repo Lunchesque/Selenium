@@ -1,12 +1,12 @@
 [
   {
-    "email": null,
     "mymail": null,
-    "role": null,
-    "placeId": "65875",
-    "py/object": "model.data.Data",
-    "userId": null,
+    "email": null,
     "name": "Auto.test.place_{}",
-    "phone": null
+    "phone": null,
+    "userId": null,
+    "placeId": "22502",
+    "role": null,
+    "py/object": "model.data.Data"
   }
 ]

@@ -32,6 +32,10 @@ class SessionHelper:
         driver.find_element_by_xpath("(//a[contains(@href, '#')])[11]").click()
         driver.find_element_by_link_text(u"Серверы").click()
 
+    def open_map(self):
+        driver = self.app.driver
+        driver.find_element_by_xpath("(//li/a)[3]").click()
+
     def open_org_view(self):
         driver = self.app.driver
         driver.find_element_by_xpath("(//a[contains(@href, '#')])[14]").click()
@@ -52,6 +56,13 @@ class SessionHelper:
         driver = self.app.driver
         if  not driver.current_url == "https://172.20.9.134/#!/org/users":
             self.open_users_list()
+        else:
+            pass
+
+    def being_on_locations_page(self):
+        driver = self.app.driver
+        if  not driver.current_url == "https://172.20.9.134/#!/org/map":
+            self.open_map()
         else:
             pass
 

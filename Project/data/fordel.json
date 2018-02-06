@@ -1,12 +1,12 @@
 [
   {
-    "email": "AutoTestUser_{}_{}@ki.ki",
     "mymail": null,
-    "role": 0,
-    "placeId": null,
-    "py/object": "model.data.Data",
-    "userId": "31363",
+    "email": "AutoTestUser_{}_{}@ki.ki",
     "name": "Auto.test.user_{}_{}",
-    "phone": "827418259667493"
+    "phone": "100319885738652",
+    "userId": "64508",
+    "placeId": null,
+    "role": 0,
+    "py/object": "model.data.Data"
   }
 ]

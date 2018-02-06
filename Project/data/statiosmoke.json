@@ -1,32 +1,32 @@
 [
   {
-    "mymail": null,
-    "email": "AutoTestUser_{}_{}@ki.ki",
-    "name": "Auto.test.user_{}_{}",
-    "phone": "806148184653648",
-    "userId": "92427",
     "placeId": null,
+    "name": "Auto.test.user_{}_{}",
+    "mymail": null,
     "role": 2,
-    "py/object": "model.data.Data"
+    "py/object": "model.data.Data",
+    "userId": "51036",
+    "phone": "636314700571776",
+    "email": "AutoTestUser_{}_{}@ki.ki"
   },
   {
-    "mymail": null,
-    "email": "AutoTestUser_{}_{}@ki.ki",
-    "name": "Auto.test.user_{}_{}",
-    "phone": "877386376012207",
-    "userId": "13746",
     "placeId": null,
+    "name": "Auto.test.user_{}_{}",
+    "mymail": null,
     "role": 1,
-    "py/object": "model.data.Data"
+    "py/object": "model.data.Data",
+    "userId": "16531",
+    "phone": "680908144624951",
+    "email": "AutoTestUser_{}_{}@ki.ki"
   },
   {
-    "mymail": null,
-    "email": "AutoTestUser_{}_{}@ki.ki",
-    "name": "Auto.test.user_{}_{}",
-    "phone": "274444495209808",
-    "userId": "03870",
     "placeId": null,
+    "name": "Auto.test.user_{}_{}",
+    "mymail": null,
     "role": 0,
-    "py/object": "model.data.Data"
+    "py/object": "model.data.Data",
+    "userId": "13428",
+    "phone": "741263719146222",
+    "email": "AutoTestUser_{}_{}@ki.ki"
   }
 ]

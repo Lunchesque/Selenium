@@ -51,6 +51,16 @@ class PlacesHelper:
         else:
             pass
 
+    def choosing_places(self):
+        driver = self.app.driver
+        driver.find_element_by_css_selector("div.pull-left.locations-dropdown-title").click()
+        locations = driver.find_element_by_xpath("//div[contains(@class, 'pull')]").click()
+
+        ActionChains(driver).pause(2).perform()
+        driver.find_element_by_xpath("(//a[contains(@href, '')])[6]").click()
+        driver.find_element_by_xpath("(//li/a)[3]").click()
+        driver.find_element_by_xpath("//div[4]/div[2]/div").click()
+
     def get_places(self):
         driver = self.app.driver
         allplaces = driver.find_elements_by_xpath("//li[@class='sidebar-list__item ng-scope']")

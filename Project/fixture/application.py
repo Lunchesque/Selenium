@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from fixture.clouds import CloudsHelper 
-from model.data import Data
 from selenium import webdriver
-from fixture.users import UsersHelper
+
+from fixture.clouds import CloudsHelper
 from fixture.places import PlacesHelper
 from fixture.session import SessionHelper
+from fixture.users import UsersHelper
 
 
 class Application:

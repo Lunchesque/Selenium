@@ -1,4 +1,0 @@
-pytest
-selenium
-jsonpickle
-pytest-ordering

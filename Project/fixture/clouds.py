@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 import os
-from model.data import Data
-from fixture import application
-from fixture.session import SessionHelper
-from selenium.webdriver.support.ui import Select
+
 from selenium.webdriver.common.action_chains import ActionChains
+
 
 class CloudsHelper:
 
@@ -24,7 +22,7 @@ class CloudsHelper:
         if len(driver.find_elements_by_xpath("//tr")) > 1:
             driver.find_element_by_xpath("//button[@name='del0']").click()
             driver.find_element_by_xpath("//button[@ng-click='confirm()']").click()
-        ActionChains(driver).pause(0.3).perform()
+        ActionChains(driver).pause(2).perform()
         driver.find_element_by_xpath("//a[@ng-click='createCloudRequest()']").click()
         driver.find_element_by_xpath("//input[@type='url']").send_keys(vpnlink)
         driver.find_element_by_xpath("(//button[1])[1]").click()

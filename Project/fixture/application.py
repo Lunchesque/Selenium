@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 from selenium import webdriver
 
 from fixture.clouds import CloudsHelper

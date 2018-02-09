@@ -1,101 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afaf2c32-917e-4842-8697-6b20ac56b792" name="Default" comment="from pycharm">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/selenium.iml" afterPath="" />
+    <list default="true" id="afaf2c32-917e-4842-8697-6b20ac56b792" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/reqs.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bin/activate" afterPath="$PROJECT_DIR$/bin/activate" />
-      <change beforePath="$PROJECT_DIR$/bin/activate.csh" afterPath="$PROJECT_DIR$/bin/activate.csh" />
-      <change beforePath="$PROJECT_DIR$/bin/activate.fish" afterPath="$PROJECT_DIR$/bin/activate.fish" />
-      <change beforePath="$PROJECT_DIR$/bin/easy_install" afterPath="$PROJECT_DIR$/bin/easy_install" />
-      <change beforePath="$PROJECT_DIR$/bin/easy_install-3.5" afterPath="$PROJECT_DIR$/bin/easy_install-3.5" />
-      <change beforePath="$PROJECT_DIR$/bin/pip" afterPath="$PROJECT_DIR$/bin/pip" />
-      <change beforePath="$PROJECT_DIR$/bin/pip3" afterPath="$PROJECT_DIR$/bin/pip3" />
-      <change beforePath="$PROJECT_DIR$/bin/pip3.5" afterPath="$PROJECT_DIR$/bin/pip3.5" />
-      <change beforePath="$PROJECT_DIR$/bin/py.test" afterPath="$PROJECT_DIR$/bin/py.test" />
-      <change beforePath="$PROJECT_DIR$/bin/pytest" afterPath="$PROJECT_DIR$/bin/pytest" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/_argcomplete.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/_argcomplete.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/_code/code.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/_code/code.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/_code/source.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/_code/source.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/_version.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/_version.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/assertion/__init__.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/assertion/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/cacheprovider.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/cacheprovider.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/capture.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/capture.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/config.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/config.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/debugging.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/debugging.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/fixtures.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/fixtures.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/helpconfig.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/helpconfig.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/hookspec.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/hookspec.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/junitxml.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/junitxml.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/logging.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/logging.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/main.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/main.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/mark.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/mark.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/monkeypatch.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/monkeypatch.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/nodes.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/nodes.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/pytester.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/pytester.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/python.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/python.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/runner.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/runner.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/skipping.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/skipping.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/terminal.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/terminal.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/tmpdir.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/_pytest/tmpdir.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/attrs-17.4.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/attrs-17.4.0.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle-0.9.5.egg-info/PKG-INFO" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle-0.9.5.egg-info/SOURCES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle-0.9.5.egg-info/dependency_links.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle-0.9.5.egg-info/installed-files.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle-0.9.5.egg-info/top_level.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/__init__.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/compat.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/compat.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/ext/numpy.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/ext/numpy.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/pickler.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/pickler.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/unpickler.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/unpickler.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/util.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/util.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/version.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jsonpickle/version.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pip-9.0.1.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/pip-9.0.1.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/RECORD" />
+      <change beforePath="$PROJECT_DIR$/Project/fixture/application.py" afterPath="$PROJECT_DIR$/Project/fixture/application.py" />
       <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pluggy-0.6.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/pluggy-0.6.0.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pluggy-0.6.0.egg-info/PKG-INFO" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pluggy-0.6.0.egg-info/SOURCES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pluggy-0.6.0.egg-info/dependency_links.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pluggy-0.6.0.egg-info/installed-files.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pluggy-0.6.0.egg-info/top_level.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/py-1.5.2.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/py-1.5.2.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pyperclip-1.6.0.egg-info/PKG-INFO" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pyperclip-1.6.0.egg-info/SOURCES.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pyperclip-1.6.0.egg-info/dependency_links.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pyperclip-1.6.0.egg-info/installed-files.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pyperclip-1.6.0.egg-info/top_level.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pyperclip/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.3.2.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.3.2.dist-info/INSTALLER" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.3.2.dist-info/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.3.2.dist-info/METADATA" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.3.2.dist-info/RECORD" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.3.2.dist-info/WHEEL" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.3.2.dist-info/entry_points.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.3.2.dist-info/metadata.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.3.2.dist-info/top_level.txt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.4.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.4.0.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest_ordering-0.5.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest_ordering-0.5.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium-3.8.1.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium-3.8.1.dist-info/INSTALLER" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium-3.8.1.dist-info/METADATA" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium-3.8.1.dist-info/RECORD" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium-3.8.1.dist-info/WHEEL" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium-3.8.1.dist-info/metadata.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium-3.8.1.dist-info/top_level.txt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium-3.9.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium-3.9.0.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/__init__.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/webdriver/__init__.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/webdriver/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/webdriver/firefox/webdriver.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/webdriver/firefox/webdriver.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/webdriver/firefox/webdriver.xpi" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/webdriver/firefox/webdriver.xpi" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/webdriver/remote/errorhandler.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/webdriver/remote/errorhandler.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/webdriver/remote/remote_connection.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/webdriver/remote/remote_connection.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/webdriver/remote/webelement.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium/webdriver/remote/webelement.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/RECORD" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,83 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test_login_as_admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/StationSmoke/test_login_as_admin.py">
+      <file leaf-file-name="reqs.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reqs.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_creating_users.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/StationSmoke/test_creating_users.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_mail_check.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/StationSmoke/test_mail_check.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_add_place.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/StationSmoke/test_add_place.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_delete_place.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/StationSmoke/test_delete_place.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_add_cloud.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/StationSmoke/test_add_cloud.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_choosing_places.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/StationSmoke/test_choosing_places.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Project/fixture/application.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+            <state relative-caret-position="42">
+              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -202,6 +42,7 @@
         <option value="$PROJECT_DIR$/Project/StationSmoke/test_add_cloud.py" />
         <option value="$PROJECT_DIR$/Project/StationSmoke/test_choosing_places.py" />
         <option value="$PROJECT_DIR$/Project/fixture/application.py" />
+        <option value="$PROJECT_DIR$/reqs.txt" />
       </list>
     </option>
   </component>
@@ -239,30 +80,12 @@
               <item name="Selenium" type="462c0819:PsiDirectoryNode" />
               <item name="Project" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Selenium" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="fixture" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Selenium" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="StationSmoke" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Selenium" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -395,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518182164740</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="from pycharm">
+      <created>1518182371491</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1518182371491</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -440,25 +270,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="-4" width="1865" height="1084" extended-state="6" />
+    <frame x="81" y="-4" width="1867" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17587131" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33877552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -497,7 +327,9 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -505,7 +337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -513,7 +344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,7 +351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -529,9 +358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -539,7 +365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -547,7 +372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -555,7 +379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -563,22 +386,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/StationSmoke/test_choosing_places.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/fixture/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        <state relative-caret-position="588">
+          <caret line="28" column="91" lean-forward="true" selection-start-line="28" selection-start-column="91" selection-end-line="28" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reqs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
           <folding />
         </state>
       </provider>

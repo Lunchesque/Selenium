@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afaf2c32-917e-4842-8697-6b20ac56b792" name="Default" comment="from pycharm">
+    <list default="true" id="afaf2c32-917e-4842-8697-6b20ac56b792" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Project/StationSmoke/test_choosing_places.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pluggy-0.6.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/pluggy-0.6.0.dist-info/RECORD" />
       <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.4.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/pytest-3.4.0.dist-info/RECORD" />
       <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium-3.9.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/selenium-3.9.0.dist-info/RECORD" />
@@ -31,6 +30,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info target-remote="origin" target-branch="forJenkins" repo="$PROJECT_DIR$" source="master" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -237,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518183791932</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="from pycharm">
+      <created>1518421292368</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1518421292368</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
